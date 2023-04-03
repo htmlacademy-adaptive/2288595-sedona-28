@@ -5,13 +5,12 @@
     <title>Седона</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
+    <header class="header">
+      <a class="header__logo">
         <img class="logo-sedona-image" src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип City of Sedona.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">
@@ -34,14 +33,13 @@
               </a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
     <main class="main-container">
       <div class="hero">
         <div class="hero__wrapper">
-          <h1 class="visually-hidden">Фото и видео прекрасного города Седона!</h1>
-          <img class="hero__logo" src="img/catalog/sedona.svg" alt="Welcome to the gorgeous Sedona.">
+          <h1 class="visually-hidden">Фото и видео</h1>
+          <img class="hero__logo" src="img/catalog/sedona.svg" alt="Добро пожаловать в великолепную Седону!">
         </div>
       </div>
       <section class="photo-video">
@@ -51,7 +49,7 @@
         </div>
       </section>
       <ul class="photo-list">
-        <li class="photo-list__item">
+        <li class="photo-list__item photo-list__item--panorama">
             <img class="photo-list__image" src="img/catalog/non-native-spaces.jpg" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца.">
             <h3 class="photo-list__title">Неродные просторы</h3>
             <p class="photo-list__description">Автор фото:Борис</p>
@@ -81,37 +79,40 @@
         </li>
       </ul>
       <section class="video-presentation">
-        <div class="video-presentation__wrapper">
           <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
           <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="video-presentation__image" src="img/catalog/video.jpg" width="280" height="177" alt="Тур по Седоне.">
-        </div>
+          <div class="video">
+              <a class="video-presentation__link" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="video-presentation__image" src="img/catalog/video.jpg" width="280" height="177" alt="Видео тура по Седоне.">
+              </a>
+            <button class="video-play" type="button" hidden></button>
+          </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag hashtag">
-          <a class="hashtag-sedona" href=""></a>
-        </div>
-        <div class="main-footer__social social">
-          <h2 class="visually-hidden">Социальные сети.</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__development development">
-          <b class="development__text">Разработано:</b>
-          <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+    <footer class="footer">
+      <div class="footer__hashtag hashtag">
+        <a class="hashtag-sedona" href="">#visitSEDONA</a>
       </div>
-    </footer>
+      <div class="footer__social social">
+        <h2 class="visually-hidden">Социальные сети.</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <small class="footer__development development">
+        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано:
+          <img src="" alt="HTML-academy.">
+        </a>
+      </small>
+  </footer>
   </body>
 </html>
