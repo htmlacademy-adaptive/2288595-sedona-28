@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+}
+
+.page__body {
+min-height: 100%;
+font-family: "PT Sans", sans-serif;
+background-color: #ffffff;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81B3D2;
+  border: none;
+  cursor: pointer;
+}

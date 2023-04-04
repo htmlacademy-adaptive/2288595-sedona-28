@@ -1,0 +1,41 @@
+.advantages {
+  background-color: #ffffff;
+}
+
+.advantages__title {
+  text-transform: uppercase;
+  &--white {
+    color: #ffffff;
+}
+}
+
+.advantages__description {
+  text-transform: uppercase;
+  &--white {
+    color: #ffffff;
+}
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  background-color: #ffffff;
+
+  &--colored-blue {
+    background-color: #81B3D2;
+  }
+
+  &--colored-grey {
+    background-color: #D6D6D6;
+  }
+}
+
+.advantages__image {
+  background-color: #3699bd;
+}
+
+

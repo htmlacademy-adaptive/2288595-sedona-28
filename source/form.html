@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -36,10 +37,10 @@
       </nav>
     </header>
     <main class="main-container">
-      <div class="hero">
-        <div class="hero__wrapper">
+      <div class="back">
+        <div class="back__wrapper">
           <h1 class="visually-hidden">Прекрасный город Седона!</h1>
-          <img class="hero__logo" src="img/catalog/sedona.svg" alt="Добро пожаловать в великолепную Седону!">
+          <img class="back__logo" src="img/catalog/sedona.svg" alt="Добро пожаловать в великолепную Седону!">
         </div>
       </div>
       <section class="review">
@@ -51,19 +52,19 @@
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
         <section class="fullname-form">
           <h2 class="fullname-form__title title">Представьтесь</h2>
-          <div class="fullname-form__field fullname-form__field--name">
+          <div class="fullname-form__field fullname-form__field--caption">
             <label for="your-name">
               Имя*:
             </label>
             <input class="fullname-form__input" name="your-name" id="your-name" placeholder="Укажите имя" value="Пётр" type="text">
           </div>
-          <div class="fullname-form__field fullname-form__field--surname">
+          <div class="fullname-form__field fullname-form__field--caption">
             <label for="your-surname">
               Фамилия*:
             </label>
             <input class="fullname-form__input" name="your-surname" id="your-surname" placeholder="Укажите фамилию" value="Пустота" type="text">
           </div>
-          <div class="fullname-form__field fullname-form__field--patronymic">
+          <div class="fullname-form__field fullname-form__field--caption">
             <label for="your-patronymic">
               Отчество*:
             </label>
@@ -72,13 +73,13 @@
         </section>
         <section class="contacts-information-form">
           <h2 class="contacts-information-form__title title">Контактная информация</h2>
-            <div class="contacts-information-form__field contacts-information-form__field--phone">
+            <div class="contacts-information-form__field contacts-information-form__field--caption">
               <label for="your-phone">
                 Контактный телефон*:
               </label>
               <input class="contacts-information-form__input" name="your-phone" id="your-phone" placeholder="Введите телефон" type="tel">
             </div>
-            <div class="contacts-information-form__field contacts-information-form__field--email">
+            <div class="contacts-information-form__field contacts-information-form__field--caption">
               <label for="your-email">
                 Электронная почта*:
               </label>

@@ -1,0 +1,34 @@
+.photo-list {
+  background-color: #ffffff;
+ }
+
+.photo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-list__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.photo-list__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.photo-list {
+  &--number-of-likes {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #000000;
+  }
+}
+

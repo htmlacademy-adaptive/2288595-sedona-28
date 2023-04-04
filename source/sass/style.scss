@@ -1,1 +1,20 @@
 // Начните писать стили здесь
+@use "page.scss";
+@use "back.scss";
+@use "checkbox-filter.scss";
+@use "contacts-information-form.scss";
+@use "emotions-form.scss";
+@use "fonts.scss";
+@use "footer.scss";
+@use "fullname-form.scss";
+@use "header.scss";
+@use "hero.scss";
+@use "main-nav.scss";
+@use "advantages.scss";
+@use "photo-list.scss";
+@use "photo-video.scss";
+@use "radio-filter.scss";
+@use "review.scss";
+@use "search-hotel.scss";
+@use "video-presentation.scss";
+body { background: white; }
