@@ -1,23 +1,32 @@
-// Начните писать стили здесь
-@use "page.scss";
-@use "back.scss";
-@use "checkbox-filter.scss";
-@use "contacts-information-form.scss";
-@use "emotions-form.scss";
-@use "fonts.scss";
-@use "footer.scss";
-@use "fullname-form.scss";
-@use "header.scss";
-@use "hero.scss";
-@use "main-nav.scss";
-@use "advantages.scss";
-@use "photo-list.scss";
-@use "photo-video.scss";
-@use "radio-filter.scss";
-@use "review.scss";
-@use "search-hotel.scss";
-@use "video-presentation.scss";
+// Basic properties
+@use "common/global.scss";
 
-body {
-  background: #ffffff;
-}
+// Mixins
+@use "common/variables.scss";
+
+// BEM blocks
+@use "includes/page.scss";
+@use "includes/button.scss";
+@use "includes/title.scss";
+@use "includes/description.scss";
+@use "includes/header.scss";
+@use "includes/footer.scss";
+@use "includes/main-nav.scss";
+@use "includes/fieldset.scss";
+@use "includes/fieldset-form.scss";
+@use "includes/back.scss";
+@use "includes/checkbox-filter.scss";
+@use "includes/contacts-information-form.scss";
+@use "includes/hero.scss";
+@use "includes/advantages.scss";
+@use "includes/photo-list.scss";
+@use "includes/photo-list__item.scss";
+@use "includes/photo-video.scss";
+@use "includes/radio-filter.scss";
+@use "includes/review.scss";
+@use "includes/review-form.scss";
+@use "includes/search-hotel.scss";
+@use "includes/video-presentation.scss";
+@use "includes/development.scss";
+@use "includes/hashtag.scss";
+@use "includes/social.scss";

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 
   &--number-of-likes {
     font-size: 14px;
@@ -13,6 +14,7 @@
 }
 
 .photo-list__title {
+  font-family: inherit;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -21,8 +23,15 @@
 }
 
 .photo-list__description {
+  font-family: inherit;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
+}
+
+.photo-list-like {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
 }

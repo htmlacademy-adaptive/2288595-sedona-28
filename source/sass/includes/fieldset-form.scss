@@ -1,0 +1,29 @@
+.fieldset-form__list {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.fieldset-form {
+  border: none;
+}
+
+.fieldset-form__title {
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fieldset-form__input {
+  padding: 16px 0 16px 16px;
+}
+
+.fieldset-form__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
