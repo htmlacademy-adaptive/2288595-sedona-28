@@ -1,7 +1,7 @@
 @use "../common/variables.scss" as vars;
 
 .advantages {
-  background-color: hsla(0, 0%, 100%, 1);
+  background-color: #ffffff;
 }
 
 .advantages__panorama {
@@ -11,6 +11,24 @@
 
 .advantages__panorama > .advantages__item {
   color: #ffffff;
+}
+
+.advantages__title {
+  padding: 54px 18px 37px 18px;
+  margin: 0;
+  text-transform: uppercase;
+
+  &--white {
+    color: #ffffff;
+  }
+}
+
+.advantages__description {
+  text-transform: uppercase;
+
+  &--white {
+    color: #ffffff;
+  }
 }
 
 .advantages__subitem {
@@ -24,24 +42,6 @@
   background-color: #ffffff;
 }
 
-.advantages__title {
-  padding: 54px 18px 37px 18px;
-  margin: 0;
-  text-transform: uppercase;
-
-  &--white {
-    color: hsla(0, 0%, 100%, 1);
-  }
-}
-
-.advantages__description {
-  text-transform: uppercase;
-
-  &--white {
-    color: hsla(0, 0%, 100%, 1);
-  }
-}
-
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -51,7 +51,7 @@
 }
 
 .advantages__image {
-  background-color: #3699bd;
+  background-color: vars.$background-image-color;
 }
 
 .advantages__wrapper {

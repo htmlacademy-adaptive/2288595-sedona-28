@@ -11,7 +11,7 @@
         <img class="logo-sedona-image" src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип City of Sedona.">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link"  href="index.html">
@@ -54,20 +54,16 @@
           <legend class="fieldset-form__title title">Представьтесь</legend>
           <ul class="fieldset-form__list">
             <li class="fieldset-form__item description">
-              <label for="your-name">
-                Имя*:
-              </label>
-              <input class="fieldset-form__input fieldset" name="your-name" id="your-name" placeholder="Укажите имя" value="Пётр" type="text">
+              <label for="your-name">Имя<span aria-hidden="true">*</span>:</label>
+              <input class="fieldset-form__input fieldset" name="your-name" id="your-name" placeholder="Укажите имя" value="Пётр" type="text" required>
             </li>
             <li class="fieldset-form__item description">
-              <label for="your-surname">
-                Фамилия*:
-              </label>
-              <input class="fieldset-form__input fieldset" name="your-surname" id="your-surname" placeholder="Укажите фамилию" value="Пустота" type="text">
+              <label for="your-surname">Фамилия<span aria-hidden="true">*</span>:</label>
+              <input class="fieldset-form__input fieldset" name="your-surname" id="your-surname" placeholder="Укажите фамилию" value="Пустота" type="text" required>
             </li>
             <li class="fieldset-form__item description">
               <label for="your-patronymic">
-                Отчество*:
+                Отчество:
               </label>
               <input class="fieldset-form__input fieldset" name="your-patronymic" id="your-patronymic" placeholder="Укажите отчество" value="Викторович" type="text">
             </li>
@@ -77,16 +73,12 @@
           <legend class="fieldset-form__title title">Контактная информация</legend>
           <ul class="fieldset-form__list">
             <li class="fieldset-form__item description">
-              <label for="your-phone">
-                Контактный телефон*:
-              </label>
-              <input class="fieldset-form__input fieldset" name="your-phone" id="your-phone" placeholder="Введите телефон" type="tel">
+              <label for="your-phone">Контактный телефон<span aria-hidden="true">*</span>:</label>
+              <input class="fieldset-form__input fieldset" name="your-phone" id="your-phone" placeholder="Введите телефон" type="tel" required>
             </li>
             <li class="fieldset-form__item description">
-              <label for="your-email">
-              Электронная почта*:
-              </label>
-              <input class="fieldset-form__input fieldset" name="your-email" id="your-email" placeholder="Введите e-mail" type="email">
+              <label for="your-email">Электронная почта<span aria-hidden="true">*</span>:</label>
+              <input class="fieldset-form__input fieldset" name="your-email" id="your-email" placeholder="Введите e-mail" type="email" required>
             </li>
           </ul>
         </fieldset>
@@ -150,12 +142,12 @@
           </ul>
         </fieldset>
         <fieldset class="fieldset-form fieldset-form--textarea">
-          <legend class="fieldset-form__title title">Опишите свои эмоции:</legend>
+          <legend class="fieldset-form__title title" id="emotions-title">Опишите свои эмоции:</legend>
           <ul class="fieldset-form__list">
             <li class="fieldset-form__item">
               <label for="your-emotions">
               </label>
-              <textarea class="fieldset-form__input fieldset" name="your-emotions" id="your-emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="fieldset-form__input fieldset" name="your-emotions" id="your-emotions" placeholder="Опишите подробно все свои восторги" required rows="6" aria-labelledby="emotions-title"></textarea>
             </li>
           </ul>
         </fieldset>

@@ -1,3 +1,5 @@
+@use "../common/variables.scss" as vars;
+
 .development__text {
   font-size: 21px;
   line-height: 14px;
@@ -7,6 +9,27 @@
 }
 
 .development__link {
-  text-align: center;
   text-decoration: none;
+}
+
+.development-icon-path {
+  fill: #000000;
+}
+
+.development__link:hover .development-icon-path,
+.development__link:focus .development-icon-path {
+  fill: vars.$base-color;
+}
+
+.development__link:active .development-icon-path {
+  fill: #b3b3b3;
+}
+
+.development__link:hover .development__text,
+.development__link:focus .development__text {
+  color: vars.$base-color;
+}
+
+.development__link:active .development__text {
+  color: #b3b3b3;
 }

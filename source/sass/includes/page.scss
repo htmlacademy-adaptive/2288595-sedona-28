@@ -10,6 +10,13 @@
   font-family: "PT Sans", sans-serif;
   background-color: hsla(0, 0%, 100%, 1);
   color: #333333;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.page__header,
+.page__main,
+.page__footer {
+  text-align: center;
 }
 
 .page__hidden {
