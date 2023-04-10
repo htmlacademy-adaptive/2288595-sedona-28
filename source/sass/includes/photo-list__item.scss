@@ -1,0 +1,7 @@
+.photo-list__item {
+  margin-bottom: 50px;
+
+  &--panorama {
+    grid-column: 1 / -1;
+  }
+}

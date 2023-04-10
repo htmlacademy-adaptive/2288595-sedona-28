@@ -1,0 +1,14 @@
+@use "../common/variables.scss" as vars;
+
+.back {
+  min-height: 158px;
+  padding: 52px 46px 67px 45px;
+  margin: 0;
+  background-image: url("../img/catalog/back.jpg");
+  background-color: vars.$background-image-color;
+  background-size: cover;
+}
+
+.back__wrapper {
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+@use "../common/variables.scss" as vars;
+
+.hero {
+  min-height: 389px;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/hero.jpg");
+  background-color: vars.$background-image-color;
+  background-size: cover;
+  text-align: center;
+}

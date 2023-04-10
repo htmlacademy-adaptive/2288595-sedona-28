@@ -1,0 +1,11 @@
+@use "../common/variables.scss" as vars;
+
+.map {
+  width: 320px;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/map-mobile.jpg");
+  background-color: vars.$background-image-color;
+}

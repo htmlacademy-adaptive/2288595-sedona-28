@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+// Basic properties
+@use "common/global.scss";
+
+// Mixins
+@use "common/variables.scss";
+
+// BEM blocks
+@use "includes/page.scss";
+@use "includes/button.scss";
+@use "includes/title.scss";
+@use "includes/description.scss";
+@use "includes/header.scss";
+@use "includes/footer.scss";
+@use "includes/main-nav.scss";
+@use "includes/fieldset.scss";
+@use "includes/fieldset-form.scss";
+@use "includes/back.scss";
+@use "includes/map.scss";
+@use "includes/checkbox-filter.scss";
+@use "includes/hero.scss";
+@use "includes/advantages.scss";
+@use "includes/photo-list.scss";
+@use "includes/photo-list__item.scss";
+@use "includes/photo-video.scss";
+@use "includes/radio-filter.scss";
+@use "includes/review.scss";
+@use "includes/review-form.scss";
+@use "includes/search-hotel.scss";
+@use "includes/video-presentation.scss";
+@use "includes/development.scss";
+@use "includes/hashtag.scss";
+@use "includes/social.scss";

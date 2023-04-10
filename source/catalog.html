@@ -3,43 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">
-      <a class="header__logo">
+    <header class="page__header">
+      <a class="page__header__logo">
         <img class="logo-sedona-image" src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип City of Sedona.">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item  site-list__item--active">
-              <a>
-                Фото и видео
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                Html Academy
-              </a>
-            </li>
-          </ul>
+        <button class="main-nav__toggle main-nav__toggle--toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Html Academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
-      <div class="hero">
-        <div class="hero__wrapper">
-          <h1 class="visually-hidden">Фото и видео</h1>
-          <img class="hero__logo" src="img/catalog/sedona.svg" alt="Добро пожаловать в великолепную Седону!">
+      <div class="back">
+        <div class="back__wrapper">
+          <h1 class="page__hidden">Фото и видео</h1>
+          <img class="back__logo" src="img/catalog/sedona.svg" alt="Добро пожаловать в великолепную Седону!">
         </div>
       </div>
       <section class="photo-video">
@@ -50,69 +51,85 @@
       </section>
       <ul class="photo-list">
         <li class="photo-list__item photo-list__item--panorama">
-            <img class="photo-list__image" src="img/catalog/non-native-spaces.jpg" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца.">
+          <img class="photo-list__image" src="img/catalog/non-native-spaces.jpg" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца.">
+          <div class="photo-list-info">
             <h3 class="photo-list__title">Неродные просторы</h3>
-            <p class="photo-list__description">Автор фото:Борис</p>
-            <span class="photo-list photo-list--number-of-likes">1350</span>
-            <button class="photo-list__button photo-list__button--like" type="button">Лайк</button>
+            <p class="photo-list__description">Автор фото: Борис</p>
+            <button class="photo-list-like" type="button" aria-label="Поставьте лайк" aria-description="1350 лайков">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" opacity=".3"/></svg>
+              <span class="like photo-list__title">1350</span>
+            </button>
+          </div>
         </li>
         <li class="photo-list__item">
-            <img class="photo-list__image" src="img/catalog/road-and-forest.jpg" width="280" height="280" alt="Растения в Седоне.">
+          <img class="photo-list__image" src="img/catalog/road-and-forest.jpg" width="280" height="280" alt="Растения в Седоне.">
+          <div class="photo-list-info">
             <h3 class="photo-list__title">Местная растительность</h3>
-            <p class="photo-list__description">Автор фото:Сергей</p>
-            <span class="photo-list photo-list--number-of-likes">143</span>
-            <button class="photo-list__button photo-list__button--like" type="button">Лайк</button>
+            <p class="photo-list__description">Автор фото: Сергей</p>
+            <button class="photo-list-like" type="button" aria-label="Поставьте лайк" aria-description="143 лайка">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" opacity=".3"/></svg>
+              <span class="like photo-list__title">143</span>
+            </button>
+          </div>
         </li>
         <li class="photo-list__item">
-            <img class="photo-list__image" src="img/catalog/plants.jpg" width="280" height="280" alt="Лесная дорога в Седоне.">
+          <img class="photo-list__image" src="img/catalog/plants.jpg" width="280" height="280" alt="Лесная дорога в Седоне.">
+          <div class="photo-list-info">
             <h3 class="photo-list__title">Дорога на север</h3>
-            <p class="photo-list__description">Автор фото:Петр</p>
-            <span class="photo-list photo-list--number-of-likes">96</span>
-            <button class="photo-list__button photo-list__button--like" type="button">Лайк</button>
+            <p class="photo-list__description">Автор фото: Петр</p>
+            <button class="photo-list-like" type="button" aria-label="Поставьте лайк" aria-description="96 лайков">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" opacity=".3"/></svg>
+              <span class="like photo-list__title">96</span>
+            </button>
+          </div>
         </li>
         <li class="photo-list__item">
-            <img class="photo-list__image" src="img/catalog/devils-bridge.jpg" width="280" height="280" alt="Мост дьявола.">
+          <img class="photo-list__image" src="img/catalog/devils-bridge.jpg" width="280" height="280" alt="Мост дьявола.">
+          <div class="photo-list-info">
             <h3 class="photo-list__title">Мост дьявола</h3>
-            <p class="photo-list__description">Автор фото:Антон</p>
-            <span class="photo-list photo-list--number-of-likes">254</span>
-            <button class="photo-list__button photo-list__button--like" type="button">Лайк</button>
+            <p class="photo-list__description">Автор фото: Антон</p>
+            <button class="photo-list-like" type="button" aria-label="Поставьте лайк" aria-description="254 лайка">
+              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" opacity=".3"/></svg>
+              <span class="like photo-list__title">254</span>
+            </button>
+          </div>
         </li>
       </ul>
       <section class="video-presentation">
           <h2 class="video-presentation__title title">Все еще сомневаетесь?</h2>
           <p class="video-presentation__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video">
-              <a class="video-presentation__link" href="https://www.youtube.com/user/htmlacademyru">
-                <img class="video-presentation__image" src="img/catalog/video.jpg" width="280" height="177" alt="Видео тура по Седоне.">
-              </a>
-            <button class="video-play" type="button" hidden></button>
+            <a class="video-presentation__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <img class="video-presentation__image" src="img/catalog/video.jpg" width="280" height="177" alt="Видео тура по Седоне.">
+            </a>
+            <button class="video-play" type="button" hidden aria-label="Включить видео"></button>
           </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__hashtag hashtag">
+    <footer class="page__footer">
+      <div class="page__footer__hashtag hashtag">
         <a class="hashtag-sedona" href="">#visitSEDONA</a>
       </div>
-      <div class="footer__social social">
-        <h2 class="visually-hidden">Социальные сети.</h2>
+      <div class="page__footer__social social">
+        <h2 class="page__hidden">Социальные сети.</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link social__link--vk button" href="https://vk.com/htmlacademy">Вконтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">Телеграм</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
           </li>
         </ul>
       </div>
-      <small class="footer__development development">
+      <small class="page__footer__development development">
         <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано:
-          <img src="" alt="HTML-academy.">
+          <small class="development__text">Разработано</small>
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
         </a>
       </small>
-  </footer>
+    </footer>
   </body>
 </html>

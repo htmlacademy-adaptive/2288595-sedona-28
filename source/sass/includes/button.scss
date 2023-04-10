@@ -1,0 +1,30 @@
+@use "../common/variables.scss" as vars;
+
+.button {
+  font-family: inherit;
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.24;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 1);
+  background-color: vars.$base-color;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsla(203, 42%, 58%, 1);
+  }
+
+  &:active {
+    background-color: hsla(202, 44%, 54%, 1);
+    color: hsla(0, 0%, 100%, 0.3);
+  }
+
+  &:disabled {
+    background-color: hsla(0, 0%, 90%, 1);
+    cursor: default;
+  }
+}
