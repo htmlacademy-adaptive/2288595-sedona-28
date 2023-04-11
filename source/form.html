@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -36,7 +37,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="page__main">
       <div class="back">
         <div class="back__wrapper">
           <h1 class="page__hidden">Прекрасный город Седона!</h1>
@@ -50,38 +51,41 @@
         </div>
       </section>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="fieldset-form">
-          <legend class="fieldset-form__title title">Представьтесь</legend>
-          <ul class="fieldset-form__list">
-            <li class="fieldset-form__item description">
-              <label for="your-name">Имя<span aria-hidden="true">*</span>:</label>
-              <input class="fieldset-form__input fieldset" name="your-name" id="your-name" placeholder="Укажите имя" value="Пётр" type="text" required>
-            </li>
-            <li class="fieldset-form__item description">
-              <label for="your-surname">Фамилия<span aria-hidden="true">*</span>:</label>
-              <input class="fieldset-form__input fieldset" name="your-surname" id="your-surname" placeholder="Укажите фамилию" value="Пустота" type="text" required>
-            </li>
-            <li class="fieldset-form__item description">
-              <label for="your-patronymic">
-                Отчество:
-              </label>
-              <input class="fieldset-form__input fieldset" name="your-patronymic" id="your-patronymic" placeholder="Укажите отчество" value="Викторович" type="text">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="fieldset-form">
-          <legend class="fieldset-form__title title">Контактная информация</legend>
-          <ul class="fieldset-form__list">
-            <li class="fieldset-form__item description">
-              <label for="your-phone">Контактный телефон<span aria-hidden="true">*</span>:</label>
-              <input class="fieldset-form__input fieldset" name="your-phone" id="your-phone" placeholder="Введите телефон" type="tel" required>
-            </li>
-            <li class="fieldset-form__item description">
-              <label for="your-email">Электронная почта<span aria-hidden="true">*</span>:</label>
-              <input class="fieldset-form__input fieldset" name="your-email" id="your-email" placeholder="Введите e-mail" type="email" required>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="fieldset-form-block">
+          <fieldset class="fieldset-form">
+            <legend class="fieldset-form__title title">Представьтесь</legend>
+            <ul class="fieldset-form__list">
+              <li class="fieldset-form__item description">
+                <label for="your-name">Имя<span aria-hidden="true">*</span>:</label>
+                <input class="fieldset-form__input fieldset" name="your-name" id="your-name" placeholder="Укажите имя" value="Пётр" type="text" required>
+              </li>
+              <li class="fieldset-form__item description">
+                <label for="your-surname">Фамилия<span aria-hidden="true">*</span>:</label>
+                <input class="fieldset-form__input fieldset" name="your-surname" id="your-surname" placeholder="Укажите фамилию" value="Пустота" type="text" required>
+              </li>
+              <li class="fieldset-form__item description">
+                <label for="your-patronymic">
+                  Отчество:
+                </label>
+                <input class="fieldset-form__input fieldset" name="your-patronymic" id="your-patronymic" placeholder="Укажите отчество" value="Викторович" type="text">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="fieldset-form">
+            <legend class="fieldset-form__title title">Контактная информация</legend>
+            <ul class="fieldset-form__list">
+              <li class="fieldset-form__item description">
+                <label for="your-phone">Контактный телефон<span aria-hidden="true">*</span>:</label>
+                <input class="fieldset-form__input fieldset" name="your-phone" id="your-phone" placeholder="Введите телефон" type="tel" required>
+              </li>
+              <li class="fieldset-form__item description">
+                <label for="your-email">Электронная почта<span aria-hidden="true">*</span>:</label>
+                <input class="fieldset-form__input fieldset" name="your-email" id="your-email" placeholder="Введите e-mail" type="email" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
         <fieldset class="radio-filter">
           <legend class="radio-filter__title title">Ваше общее впечатление:</legend>
           <ul class="radio-filter__list">

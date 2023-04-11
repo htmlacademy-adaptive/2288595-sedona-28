@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
 }
 
 .photo-list__title {
@@ -14,6 +13,10 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: 1280px) {
+    color: #ffffff;
+  }
 }
 
 .photo-list__description {
@@ -22,10 +25,30 @@
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+
+  @media (min-width: 1280px) {
+    color: #ffffff;
+  }
 }
 
 .photo-list-like {
   background-color: transparent;
   border: transparent;
   cursor: pointer;
+}
+
+.photo-list__image {
+  &--panorama {
+    @media (min-width: 768px) {
+      width: 648px;
+      height: 400px;
+      background-image: url("../img/catalog/non-native-spaces-tablet.jpg");
+    }
+
+    @media (min-width: 1280px) {
+      width: 1200px;
+      height: 400px;
+      background-image: url("../img/catalog/non-native-spaces-desktop.jpg");
+    }
+  }
 }

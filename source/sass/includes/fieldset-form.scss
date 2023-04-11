@@ -6,6 +6,7 @@
 }
 
 .fieldset-form {
+  margin-top: 48px;
   border: none;
 }
 
@@ -25,4 +26,18 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 16px;
+}
+
+.fieldset-form-block {
+  @media (min-width: 768px) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 280px 298px;
+  }
+
+  @media (min-width: 1280px) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 430px 402px;
+  }
 }

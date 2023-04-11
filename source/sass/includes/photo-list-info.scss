@@ -1,0 +1,17 @@
+.photo-list-info {
+  @media (min-width: 768px) {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  @media (min-width: 1280px) {
+    position: relative;
+    margin-top: -88px;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}

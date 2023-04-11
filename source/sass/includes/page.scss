@@ -14,10 +14,19 @@
 }
 
 .page__header,
-.page__main,
+.page__main {
+  margin: 0 auto;
+}
+
 .page__footer {
   text-align: center;
 }
+
+.page__header__logo {
+  display: flex;
+  justify-content: center;
+}
+
 
 .page__hidden {
   position: absolute;

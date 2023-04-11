@@ -1,4 +1,5 @@
 .radio-filter {
+  margin-top: 48px;
   border: none;
 }
 
@@ -14,6 +15,16 @@
   margin: 0;
   margin-left: 20px;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 280px 280px;
+  }
+
+  @media (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .radio-filter__title {

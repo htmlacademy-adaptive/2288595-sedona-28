@@ -11,3 +11,17 @@
   margin-top: 39px;
   margin-bottom: 38px;
 }
+
+.video-presentation__image {
+  @media (min-width: 768px) {
+    width: 648px;
+    height: 500px;
+    background-image: url("../img/catalog/video-tablet.jpg");
+  }
+
+  @media (min-width: 1280px) {
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/catalog/video-desktop.jpg");
+  }
+}
