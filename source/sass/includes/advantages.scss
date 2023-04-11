@@ -7,6 +7,14 @@
 .advantages__panorama {
   background-color: vars.$base-color;
   text-align: center;
+
+  @media (min-width: 768px) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: 1280px) {
+    grid-column: 1/-1;
+  }
 }
 
 .advantages__panorama > .advantages__item {
@@ -60,18 +68,33 @@
   background-color: #eeeeee;
   list-style: none;
 
-  &--grey {
-    @media (min-width: 768px) {
-      display: grid;
-      grid-template-columns: 256px 256px 256px;
-      min-height: 256px;
-    }
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    min-height: 256px;
+  }
 
-    @media (min-width: 1280px) {
-      display: grid;
-      grid-template-columns: 400px 400px 400px;
-      min-height: 256px;
-    }
+  @media (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    min-height: 256px;
+  }
+}
+
+.advantages__continuation {
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    min-height: 256px;
+  }
+
+  @media (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    min-height: 256px;
   }
 }
 
