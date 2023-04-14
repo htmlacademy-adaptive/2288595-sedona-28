@@ -3,13 +3,9 @@
 }
 
 .header__logo {
-  height: 96px;
-  text-align: center;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.logo-sedona-image {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 5;
 }

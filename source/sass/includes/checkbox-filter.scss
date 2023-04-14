@@ -1,3 +1,5 @@
+@use "../common/variables.scss" as vars;
+
 .checkbox-filter {
   margin-top: 48px;
   border: none;
@@ -16,14 +18,14 @@
   margin-left: 20px;
   padding: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: vars.$tablet-width) {
     display: grid;
-    grid-template-columns: 280px 280px;
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 1280px) {
-    display: flex;
-    justify-content: space-between;
+  @media (min-width: vars.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

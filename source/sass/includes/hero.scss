@@ -9,14 +9,12 @@
   background-color: vars.$background-image-color;
   background-size: cover;
 
-  @media (min-width: 768px) {
+  @media (min-width: vars.$tablet-width) {
     min-height: 518px;
-    background-image: url("../img/hero-tablet.jpg");
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: vars.$desktop-width) {
     min-height: 518px;
-    background-image: url("../img/hero-desktop.jpg");
   }
 }
 
@@ -24,12 +22,12 @@
   width: 282px;
   height: 214px;
 
-  @media (min-width: 768px) {
+  @media (min-width: vars.$tablet-width) {
     width: 461px;
     height: 350px;
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: vars.$desktop-width) {
     width: 460px;
     height: 350px;
   }
