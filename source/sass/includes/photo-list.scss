@@ -51,6 +51,16 @@
   cursor: pointer;
 }
 
+.like-fill {
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: vars.$desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
+
 .like {
   margin-left: 4px;
 }
