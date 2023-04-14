@@ -1,18 +1,38 @@
 @use "../common/variables.scss" as vars;
 
-.main-nav {
-  margin: 0;
-  padding: 0;
-}
-
 .main-nav__list {
+  display: grid;
   margin: 0;
   padding: 0;
+  padding-top: 0;
+  margin-top: 74px;
   min-height: 223px;
   background-color: vars.$base-color;
   text-transform: uppercase;
   color: #ffffff;
   list-style: none;
+
+  @media (min-width: vars.$tablet-width) {
+    padding: 0;
+    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: 56px;
+    background-color: #ffffff;
+    color: #000000;
+
+    &::after {
+      content: "";
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 
 .main-nav__toggle {
@@ -21,6 +41,9 @@
   color: vars.$base-color;
 
   &--toggle {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
     width: 23px;
     height: 22px;
     background: url("../img/icon-menu.svg");
@@ -34,6 +57,14 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: vars.$tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    background: none;
+  }
 }
 
 .main-nav__link {
@@ -44,4 +75,14 @@
   color: inherit;
   text-decoration: none;
   font-weight: 700;
+
+  &--page {
+    color: #766357;
+  }
+}
+
+.main-nav__item {
+  @media (0 < width < vars.$tablet-width) {
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
 }

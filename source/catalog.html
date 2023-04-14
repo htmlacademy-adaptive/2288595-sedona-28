@@ -2,12 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page__header">
-      <a class="page__header__logo">
+      <a class="header__logo" href="index.html">
         <img class="logo-sedona-image" src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип City of Sedona.">
       </a>
       <nav class="main-nav">
@@ -19,12 +20,12 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">
+            <a class="main-nav__link  main-nav__link--page">
               Фото и видео
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link"  href="form.html">
               Форма отзыва
             </a>
           </li>
@@ -36,11 +37,11 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="page__main">
       <div class="back">
         <div class="back__wrapper">
           <h1 class="page__hidden">Фото и видео</h1>
-          <img class="back__logo" src="img/catalog/sedona.svg" alt="Добро пожаловать в великолепную Седону!">
+          <img class="back__logo" src="img/catalog/sedona.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону!">
         </div>
       </div>
       <section class="photo-video">
@@ -52,9 +53,11 @@
       <ul class="photo-list">
         <li class="photo-list__item photo-list__item--panorama">
           <img class="photo-list__image" src="img/catalog/non-native-spaces.jpg" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца.">
-          <div class="photo-list-info">
-            <h3 class="photo-list__title">Неродные просторы</h3>
-            <p class="photo-list__description">Автор фото: Борис</p>
+          <div class="photo-list-info photo-list-info--panorama">
+            <div class="photo-list-name">
+              <h3 class="photo-list__title">Неродные просторы</h3>
+              <p class="photo-list__description">Автор фото: Борис</p>
+          </div>
             <button class="photo-list-like" type="button" aria-label="Поставьте лайк" aria-description="1350 лайков">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" opacity=".3"/></svg>
               <span class="like photo-list__title">1350</span>
@@ -64,8 +67,10 @@
         <li class="photo-list__item">
           <img class="photo-list__image" src="img/catalog/road-and-forest.jpg" width="280" height="280" alt="Растения в Седоне.">
           <div class="photo-list-info">
-            <h3 class="photo-list__title">Местная растительность</h3>
-            <p class="photo-list__description">Автор фото: Сергей</p>
+            <div class="photo-list-name">
+              <h3 class="photo-list__title">Местная растительность</h3>
+              <p class="photo-list__description">Автор фото: Сергей</p>
+            </div>
             <button class="photo-list-like" type="button" aria-label="Поставьте лайк" aria-description="143 лайка">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" opacity=".3"/></svg>
               <span class="like photo-list__title">143</span>
@@ -75,8 +80,10 @@
         <li class="photo-list__item">
           <img class="photo-list__image" src="img/catalog/plants.jpg" width="280" height="280" alt="Лесная дорога в Седоне.">
           <div class="photo-list-info">
-            <h3 class="photo-list__title">Дорога на север</h3>
-            <p class="photo-list__description">Автор фото: Петр</p>
+            <div class="photo-list-name">
+              <h3 class="photo-list__title">Дорога на север</h3>
+              <p class="photo-list__description">Автор фото: Петр</p>
+          </div>
             <button class="photo-list-like" type="button" aria-label="Поставьте лайк" aria-description="96 лайков">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" opacity=".3"/></svg>
               <span class="like photo-list__title">96</span>
@@ -86,8 +93,10 @@
         <li class="photo-list__item">
           <img class="photo-list__image" src="img/catalog/devils-bridge.jpg" width="280" height="280" alt="Мост дьявола.">
           <div class="photo-list-info">
-            <h3 class="photo-list__title">Мост дьявола</h3>
-            <p class="photo-list__description">Автор фото: Антон</p>
+            <div class="photo-list-name">
+              <h3 class="photo-list__title">Мост дьявола</h3>
+              <p class="photo-list__description">Автор фото: Антон</p>
+            </div>
             <button class="photo-list-like" type="button" aria-label="Поставьте лайк" aria-description="254 лайка">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 23 21"><path fill="#000" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z" opacity=".3"/></svg>
               <span class="like photo-list__title">254</span>
@@ -114,13 +123,13 @@
         <h2 class="page__hidden">Социальные сети.</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk button" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link social__link--vk button" href="https://vk.com/htmlacademy"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">Телеграм</a>
+            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru"></a>
           </li>
         </ul>
       </div>

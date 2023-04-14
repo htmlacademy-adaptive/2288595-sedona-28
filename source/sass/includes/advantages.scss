@@ -7,6 +7,10 @@
 .advantages__panorama {
   background-color: vars.$base-color;
   text-align: center;
+
+  @media (min-width: vars.$tablet-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .advantages__panorama > .advantages__item {
@@ -32,40 +36,88 @@
 }
 
 .advantages__subitem {
-  width: 237px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: #ffffff;
   list-style: none;
-  text-align: left;
+
+  @media (0 < width < vars.$tablet-width) {
+    text-align: left;
+    min-height: 92px;
+    margin-left: 65px;
+  }
 }
 
 .advantages__sublist {
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
+  list-style: none;
+
+  @media (min-width: vars.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 256px;
+  }
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
-  min-height: 1841px;
   background-color: #eeeeee;
   list-style: none;
+
+  @media (min-width: vars.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 256px;
+  }
+}
+
+.advantages__continuation {
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: vars.$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 256px;
+  }
+}
+
+.advantages__item {
+  text-align: center;
+  min-height: 256px;
+
+  @media (0 < width < vars.$tablet-width) {
+    min-height: 211px;
+  }
 }
 
 .advantages__image {
   background-color: vars.$background-image-color;
+  width: 100%;
+  object-fit: cover;
+  height: 260px;
 }
 
 .advantages__wrapper {
   padding: 32px 18px 32px 18px;
   min-height: 157px;
   text-align: center;
+
+  @media (min-width: vars.$tablet-width) {
+    padding: 47px 57px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding: 59px 44px;
+  }
 }
 
 .advantages__text {
   margin-top: 35px;
-}
-
-.advantages__item {
-  text-align: center;
 }
 
 .advantages__subtitle {
@@ -74,4 +126,24 @@
 
 .advantages__subdescription {
   padding-bottom: 33px;
+}
+
+.advantages__grey-item {
+  display: grid;
+}
+
+.advantages__picture {
+  &--picture-right {
+    @media (width >= vars.$tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  &--picture-left {
+    @media (width >= vars.$tablet-width) {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+  }
 }

@@ -1,3 +1,5 @@
+@use "../common/variables.scss" as vars;
+
 .fieldset-form__list {
   margin: 0;
   margin-left: 20px;
@@ -6,6 +8,7 @@
 }
 
 .fieldset-form {
+  margin-top: 48px;
   border: none;
 }
 
@@ -25,4 +28,20 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 16px;
+}
+
+.fieldset-form-block {
+  @media (min-width: vars.$tablet-width) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 88px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 128px;
+  }
 }

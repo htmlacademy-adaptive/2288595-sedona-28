@@ -1,12 +1,22 @@
 @use "../common/variables.scss" as vars;
 
 .back {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   min-height: 158px;
-  padding: 52px 46px 67px 45px;
-  margin: 0;
+  padding: 0;
   background-image: url("../img/catalog/back.jpg");
   background-color: vars.$background-image-color;
   background-size: cover;
+
+  @media (min-width: vars.$tablet-width) {
+    min-height: 290px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    min-height: 301px;
+  }
 }
 
 .back__wrapper {

@@ -1,4 +1,7 @@
+@use "../common/variables.scss" as vars;
+
 .checkbox-filter {
+  margin-top: 48px;
   border: none;
 }
 
@@ -14,6 +17,16 @@
   margin: 0;
   margin-left: 20px;
   padding: 0;
+
+  @media (min-width: vars.$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .checkbox-filter__title {

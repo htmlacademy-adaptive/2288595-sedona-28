@@ -1,31 +1,56 @@
+@use "../common/variables.scss" as vars;
+
 .photo-list {
   display: grid;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: vars.$tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .photo-list__title {
+  margin: 0;
   font-family: inherit;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: vars.$desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .photo-list__description {
+  margin: 0;
   font-family: inherit;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+
+  @media (min-width: vars.$desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .photo-list-like {
   background-color: transparent;
   border: transparent;
   cursor: pointer;
+}
+
+.like {
+  margin-left: 4px;
 }

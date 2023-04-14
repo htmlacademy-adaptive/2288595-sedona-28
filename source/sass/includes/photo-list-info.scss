@@ -1,0 +1,21 @@
+@use "../common/variables.scss" as vars;
+
+.photo-list-info {
+  @media (min-width: vars.$tablet-width) {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    margin-top: -88px;
+    background-color: hsla(0, 0%, 0%, 0.3);
+  }
+}

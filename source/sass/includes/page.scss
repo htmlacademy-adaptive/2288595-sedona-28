@@ -1,22 +1,35 @@
+@use "../common/variables.scss" as vars;
+
 .page {
   height: 100%;
   background-color: hsla(0, 0%, 95%, 1);
 }
 
 .page__body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   max-width: 1200px;
-  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   background-color: hsla(0, 0%, 100%, 1);
   color: #333333;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.page__header,
-.page__main,
 .page__footer {
-  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  padding: 33px 20px;
+
+  @media (width >= vars.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 33px 20px;
+  }
 }
 
 .page__hidden {
@@ -31,4 +44,8 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page__main {
+  flex-grow: 1;
 }
