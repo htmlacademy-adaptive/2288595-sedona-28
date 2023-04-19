@@ -16,6 +16,27 @@
   @media (min-width: vars.$desktop-width) {
     min-height: 518px;
   }
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 57px;
+    background-color: #ffffff;
+    width: 100%;
+
+
+    @media (width <= vars.$tablet-width) {
+      clip-path: polygon(0 70%, 0 0, 50% 70%, 100% 0, 100% 70%);
+      top: 406px;
+    }
+
+    @media (width >= vars.$tablet-width) {
+      clip-path: polygon(0 100%, 0 15%, 10% 44%, 10% 0, 50% 97%, 90% 0, 90% 44%, 100% 15%, 100% 100%);
+      top: 518px;
+      max-width: 1200px;
+    }
+  }
 }
 
 .hero__logo {

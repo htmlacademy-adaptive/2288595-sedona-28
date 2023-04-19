@@ -2,20 +2,43 @@
 
 .fieldset-form__list {
   margin: 0;
-  margin-left: 20px;
   padding: 0;
   list-style: none;
+
+  @media (width < vars.$tablet-width) {
+    padding: 0 var(--side-offset, 20px);
+  }
 }
 
 .fieldset-form {
-  margin-top: 48px;
   border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (width < vars.$tablet-width) {
+    margin-top: 53px;
+  }
+
+  &--textarea {
+      @media (min-width: vars.$tablet-width) {
+        padding: 0 var(--side-offset, 60px);
+    }
+      @media (min-width: vars.$desktop-width) {
+        padding: 0 var(--side-offset, 120px);
+    }
+  }
 }
 
+  // @media (width < vars.$tablet-width) {
+  //   border-top: 1px solid #e5e5e5;
+  // }
+
 .fieldset-form__title {
-  margin: 0;
-  margin-top: 24px;
   text-align: center;
+
+  @media (width < vars.$tablet-width) {
+    margin-bottom: 4px;
+  }
 }
 
 .fieldset-form__input {
@@ -30,11 +53,23 @@
 }
 
 .fieldset-form-block {
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 50%;
+  //   translate: -50% 0;
+  //   width: 1px;
+  //   height: 40%;
+  //   background-color: #e5e5e5;
+  // }
+
   @media (min-width: vars.$tablet-width) {
     display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
     gap: 88px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   @media (min-width: vars.$desktop-width) {
@@ -42,5 +77,7 @@
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
     gap: 128px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }

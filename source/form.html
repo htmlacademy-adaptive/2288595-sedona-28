@@ -8,11 +8,13 @@
   </head>
   <body class="page__body">
     <header class="page__header">
-      <a class="header__logo" href="index.html">
+      <a class="page__header__logo" href="index.html">
         <img class="logo-sedona-image" src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип City of Sedona.">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
+        <button class="burger main-nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span class="burger__toggle"></span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
@@ -53,7 +55,7 @@
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="fieldset-form-block">
           <fieldset class="fieldset-form">
-            <legend class="fieldset-form__title title">Представьтесь</legend>
+            <legend class="fieldset-form__title title">Представьтесь:</legend>
             <ul class="fieldset-form__list">
               <li class="fieldset-form__item description">
                 <label for="your-name">Имя<span aria-hidden="true">*</span>:</label>
@@ -72,7 +74,7 @@
             </ul>
           </fieldset>
           <fieldset class="fieldset-form">
-            <legend class="fieldset-form__title title">Контактная информация</legend>
+            <legend class="fieldset-form__title title">Контактная информация:</legend>
             <ul class="fieldset-form__list">
               <li class="fieldset-form__item description">
                 <label for="your-phone">Контактный телефон<span aria-hidden="true">*</span>:</label>
@@ -155,12 +157,14 @@
             </li>
           </ul>
         </fieldset>
-        <button class="review-form__button button" type="submit">Отправить отзыв</button>
-        <p class="review-form__legend">
-          <small>
-            * — обязательные поля
-          </small>
-        </p>
+        <div class="review-form__note">
+          <button class="review-form__button button" type="submit">Отправить отзыв</button>
+          <p class="review-form__legend">
+            <small class="note">
+              * — обязательные поля
+            </small>
+          </p>
+        </div>
       </form>
     </main>
     <footer class="page__footer">
@@ -194,5 +198,6 @@
         </a>
       </small>
   </footer>
+  <script src="js/burger-navigation.js"></script>
   </body>
 </html>

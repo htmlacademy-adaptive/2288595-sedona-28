@@ -4,17 +4,19 @@
   display: grid;
   background-color: #ffffff;
   margin: 0;
-  padding: 0;
   list-style: none;
   object-fit: cover;
   width: 100%;
+  padding: 0 var(--side-offset, 20px);
 
   @media (min-width: vars.$tablet-width) {
     grid-template-columns: 1fr 1fr;
+    padding: 0 var(--side-offset, 60px);
   }
 
   @media (min-width: vars.$desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
   }
 }
 
@@ -26,6 +28,11 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+
+  @media (width < vars.$tablet-width) {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 
   @media (min-width: vars.$desktop-width) {
     color: #ffffff;
@@ -40,15 +47,44 @@
   font-weight: 400;
   color: #333333;
 
+  @media (width < vars.$tablet-width) {
+    margin-bottom: 17px;
+  }
+
   @media (min-width: vars.$desktop-width) {
     color: #ffffff;
   }
+}
+
+.photo-list__item {
+  @media (width < vars.$tablet-width) {
+    padding-top: 24px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &--panorama {
+    grid-column: 1/-1;
+
+    @media (width < vars.$tablet-width) {
+      border-top: 1px solid #e5e5e5;
+    }
+  }
+}
+
+.photo-list__item > .photo-list__image {
+  width: 100%;
+  object-fit: cover;
+  height: 280px;
 }
 
 .photo-list-like {
   background-color: transparent;
   border: transparent;
   cursor: pointer;
+
+  @media (width < vars.$tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .like-fill {

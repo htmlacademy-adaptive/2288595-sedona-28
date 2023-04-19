@@ -1,18 +1,52 @@
+@use "../common/variables.scss" as vars;
+
 .video-presentation {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .video-presentation__title {
   margin: 0;
-  margin-top: 37px;
+
+  @media (width < vars.$tablet-width) {
+    margin-top: 17px;
+  }
+
+  @media (width >= vars.$tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-presentation__description {
   margin-top: 39px;
-  margin-bottom: 38px;
+
+  @media (width < vars.$tablet-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .video-presentation__image {
   width: 100%;
   object-fit: cover;
+}
+
+.video-presentation__wrapper {
+  @media (min-width: vars.$tablet-width) {
+    padding: 58px 102px 94px;
+  }
+}
+
+.video {
+  @media (width < vars.$tablet-width) {
+    padding: 0 var(--side-offset, 20px);
+  }
+
+  @media (min-width: vars.$tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    margin-bottom: 84px;
+  }
 }
