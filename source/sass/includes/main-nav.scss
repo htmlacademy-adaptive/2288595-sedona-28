@@ -1,11 +1,11 @@
 @use "../common/variables.scss" as vars;
 
 @media (width < vars.$tablet-width) {
-  .main-nav__toggle[aria-expanded=true] + .main-nav__list {
+  .main-nav__toggle[aria-expanded="true"] + .main-nav__list {
     translate: 0 0;
   }
 
-  .main-nav__toggle[aria-expanded=true] .burger__toggle {
+  .main-nav__toggle[aria-expanded="true"] .burger__toggle {
     background: url("../img/icon-cross.svg");
   }
 

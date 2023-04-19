@@ -20,18 +20,15 @@
   }
 
   &--textarea {
-      @media (min-width: vars.$tablet-width) {
-        padding: 0 var(--side-offset, 60px);
+    @media (min-width: vars.$tablet-width) {
+      padding: 0 var(--side-offset, 60px);
     }
-      @media (min-width: vars.$desktop-width) {
-        padding: 0 var(--side-offset, 120px);
+
+    @media (min-width: vars.$desktop-width) {
+      padding: 0 var(--side-offset, 120px);
     }
   }
 }
-
-  // @media (width < vars.$tablet-width) {
-  //   border-top: 1px solid #e5e5e5;
-  // }
 
 .fieldset-form__title {
   text-align: center;
