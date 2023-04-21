@@ -1,6 +1,6 @@
 @use "../common/variables.scss" as vars;
 
-.photo__item {
+.photo-posts__item {
   @media (width < vars.$tablet-width) {
     padding-top: 24px;
     border-bottom: 1px solid #e5e5e5;
@@ -15,7 +15,7 @@
   }
 }
 
-.photo__item > .photo__image {
+.photo-posts__item > .photo-posts__image {
   width: 100%;
   object-fit: cover;
   height: 280px;

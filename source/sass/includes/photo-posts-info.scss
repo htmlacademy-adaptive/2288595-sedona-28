@@ -1,6 +1,6 @@
 @use "../common/variables.scss" as vars;
 
-.photo__info {
+.photo-posts__info {
   @media (min-width: vars.$tablet-width) {
     padding: 22px 20px 16px 20px;
     display: flex;
