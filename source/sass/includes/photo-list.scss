@@ -1,6 +1,6 @@
 @use "../common/variables.scss" as vars;
 
-.photo-list {
+.photo__list {
   display: grid;
   background-color: #ffffff;
   margin: 0;
@@ -20,7 +20,7 @@
   }
 }
 
-.photo-list__title {
+.photo__title {
   margin: 0;
   font-family: inherit;
   font-size: 14px;
@@ -39,7 +39,7 @@
   }
 }
 
-.photo-list__description {
+.photo__description {
   margin: 0;
   font-family: inherit;
   font-size: 14px;
@@ -54,49 +54,4 @@
   @media (min-width: vars.$desktop-width) {
     color: #ffffff;
   }
-}
-
-.photo-list__item {
-  @media (width < vars.$tablet-width) {
-    padding-top: 24px;
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  &--panorama {
-    grid-column: 1/-1;
-
-    @media (width < vars.$tablet-width) {
-      border-top: 1px solid #e5e5e5;
-    }
-  }
-}
-
-.photo-list__item > .photo-list__image {
-  width: 100%;
-  object-fit: cover;
-  height: 280px;
-}
-
-.photo-list-like {
-  background-color: transparent;
-  border: transparent;
-  cursor: pointer;
-
-  @media (width < vars.$tablet-width) {
-    margin-bottom: 25px;
-  }
-}
-
-.like-fill {
-  fill: #000000;
-  opacity: 0.3;
-
-  @media (min-width: vars.$desktop-width) {
-    fill: #ffffff;
-    opacity: 1;
-  }
-}
-
-.like {
-  margin-left: 4px;
 }

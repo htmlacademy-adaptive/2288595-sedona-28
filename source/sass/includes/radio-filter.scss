@@ -2,19 +2,36 @@
 
 .radio-filter {
   padding: 0;
-  margin-top: 48px;
+  // border-color: #e5e5e5;
+  // border-style: solid;
+  // border-width: 1px 0 0;
+  // padding: 0;
+  // margin-top: 48px;
   border: none;
+
+  // display: flex;
+  // position: absolute;
+  // bottom: -32px;
+  // left: 50%;
+  // width: 60px;
+  // height: 2px;
+  // transform: translateX(-50%);
+  // content: " ";
+  // background: rgba(0, 0, 0, 0.3);
+
+
+  @media (width < vars.$tablet-width) {
+    margin-top: 59px;
+  }
 
   @media (min-width: vars.$tablet-width) {
     border-top: 1px solid #e5e5e5;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 63px 60px 0 60px;
   }
 
   @media (min-width: vars.$desktop-width) {
     border-top: 1px solid #e5e5e5;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin: 71px 120px 0 120px;
   }
 }
 
@@ -49,6 +66,19 @@
 
 .radio-filter__title {
   text-align: center;
+  position: relative;
+
+  // &::before {
+  //   display: flex;
+  //   content: "";
+  //   position: absolute;
+  //   left: 50%;
+  //   translate: -50% 0;
+  //   width: 1px;
+  //   height: 104%;
+  //   background-color: #e5e5e5;
+  //   transform: rotate(90deg);
+  // }
 
   @media (min-width: vars.$tablet-width) {
     padding-left: 67px;

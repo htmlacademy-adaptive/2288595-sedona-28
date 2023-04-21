@@ -51,7 +51,7 @@
   text-align: center;
 
   @media (min-width: vars.$tablet-width) {
-    padding-left: 67px;
-    padding-right: 67px;
+    width: 400px;
+    padding: 0;
   }
 }

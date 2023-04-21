@@ -218,6 +218,11 @@
   }
 
   &--picture-left {
+    @media (width < vars.$tablet-width) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     @media (width >= vars.$tablet-width) {
       display: grid;
       grid-template-columns: 2fr 1fr;

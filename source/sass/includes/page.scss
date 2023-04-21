@@ -34,7 +34,7 @@
   background-color: #ffffff;
 
   @media (0 < width < vars.$tablet-width) {
-    padding: 33px 82px;
+    padding: 33px;
   }
 
   @media (width >= vars.$tablet-width) {

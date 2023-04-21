@@ -1,0 +1,48 @@
+.control {
+  position: relative;
+  padding: 10px 0 10px 62px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.control-mark {
+  position: absolute;
+  box-sizing: border-box;
+  width: 46px;
+  height: 46px;
+  left: 0;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.control-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  display: block;
+  width: 22px;
+  height: 16px;
+  margin-top: 16px;
+  margin-left: 12px;
+  content: " ";
+  background: url("../img/checkmark.svg");
+  background-repeat: no-repeat;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  margin: 15px;
+  width: 16px;
+  content: " ";
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+}
