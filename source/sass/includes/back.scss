@@ -2,13 +2,14 @@
 
 .back {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   min-height: 158px;
   padding: 0;
   background-image: url("../img/catalog/back.jpg");
   background-color: vars.$background-image-color;
   background-size: cover;
+  position: relative;
 
   @media (min-width: vars.$tablet-width) {
     min-height: 290px;
@@ -16,6 +17,23 @@
 
   @media (min-width: vars.$desktop-width) {
     min-height: 301px;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 57px;
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
+
+    @media (width >= vars.$tablet-width) {
+      clip-path: polygon(0 100%, 0 15%, 10% 44%, 10% 0, 50% 97%, 90% 0, 90% 44%, 100% 15%, 100% 100%);
+      max-width: 1200px;
+    }
   }
 }
 

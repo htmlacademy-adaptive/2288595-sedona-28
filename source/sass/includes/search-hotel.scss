@@ -1,27 +1,55 @@
+@use "../common/variables.scss" as vars;
+
 .search-hotel {
-  margin-bottom: 55px;
+  margin-bottom: 49px;
   background-color: #ffffff;
   text-align: center;
+
+  @media (min-width: vars.$tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .search-hotel__title {
   margin: 0;
-  margin-top: 39px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
 
   &--larger-text {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000000;
+    @media (0 < width < vars.$tablet-width) {
+      font-size: 21px;
+      line-height: 26px;
+    }
   }
 }
 
 .search-hotel__description {
-  margin-top: 39px;
+  margin-top: 31px;
 }
 
 .search-hotel__button {
-  padding: 16px 49px 16px 50px;
-  margin-top: 32px;
+  padding: 16px 49px;
+  width: 458px;
+
+  @media (0 < width < vars.$tablet-width) {
+    padding: 16px 49px;
+    width: 284px;
+  }
+}
+
+.search-hotel__wrapper {
+  @media (0 < width < vars.$tablet-width) {
+    padding: 39px 29px 32px 29px;
+  }
+
+  @media (min-width: vars.$tablet-width) {
+    padding: 60px 166px 45px;
+  }
 }

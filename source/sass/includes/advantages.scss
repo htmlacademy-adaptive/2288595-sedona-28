@@ -1,7 +1,9 @@
 @use "../common/variables.scss" as vars;
 
 .advantages {
+  text-align: center;
   background-color: #ffffff;
+  counter-set: motive;
 }
 
 .advantages__panorama {
@@ -18,8 +20,8 @@
 }
 
 .advantages__title {
-  padding: 54px 18px 37px 18px;
   margin: 0;
+  margin-bottom: 11px;
   text-transform: uppercase;
 
   &--white {
@@ -29,6 +31,14 @@
 
 .advantages__description {
   text-transform: uppercase;
+  margin: 0;
+
+  &::before {
+    counter-increment: motive;
+    content: "— №" counter(motive) " —";
+    display: block;
+    margin-bottom: 17px;
+  }
 
   &--white {
     color: #ffffff;
@@ -41,19 +51,50 @@
   flex-direction: column;
   background-color: #ffffff;
   list-style: none;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center 60px;
+  background-size: 77px 72px;
+  padding: 158px 33px 61px;
+  min-height: 92px;
 
   @media (0 < width < vars.$tablet-width) {
+    background-position: 0 23px;
+    background-size: 39px 36px;
     text-align: left;
     min-height: 92px;
-    margin-left: 65px;
+    padding: 23px 18px 0 47px;
+  }
+
+
+  &--house {
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--gift {
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food {
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.advantages__subitem:last-child {
+  @media (0 < width < vars.$tablet-width) {
+    padding-bottom: 46px;
   }
 }
 
 .advantages__sublist {
   margin: 0;
-  padding: 0;
   background-color: #ffffff;
   list-style: none;
+  padding: 0;
+
+  @media (0 < width < vars.$tablet-width) {
+    padding: 0 var(--side-offset, 20px);
+  }
 
   @media (min-width: vars.$tablet-width) {
     display: grid;
@@ -87,11 +128,26 @@
 }
 
 .advantages__item {
+  display: block;
   text-align: center;
   min-height: 256px;
 
+  @media (min-width: vars.$tablet-width) {
+    padding: 52px 33px 31px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding: 52px 50px;
+  }
+
   @media (0 < width < vars.$tablet-width) {
     min-height: 211px;
+    padding: 54px 18px 40px;
+
+    &--grey {
+      padding: 24px 26px;
+      min-height: 165px;
+    }
   }
 }
 
@@ -100,32 +156,53 @@
   width: 100%;
   object-fit: cover;
   height: 260px;
+
+  @media (min-width: vars.$tablet-width) {
+    height: 256px;
+  }
 }
 
 .advantages__wrapper {
-  padding: 32px 18px 32px 18px;
+  padding: 32px 31px 32px;
   min-height: 157px;
   text-align: center;
 
   @media (min-width: vars.$tablet-width) {
-    padding: 47px 57px;
+    padding: 47px 124px;
   }
 
   @media (min-width: vars.$desktop-width) {
-    padding: 59px 44px;
+    padding: 59px 359px 45px;
+  }
+
+  &::after {
+    @media (width < vars.$tablet-width) {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 57px;
+      background-color: #ffffff;
+      width: 100%;
+      right: 0;
+      clip-path: polygon(0 44%, 100% 44%, 100% 54%, 50% 100%, 0 54%);
+    }
   }
 }
 
 .advantages__text {
   margin-top: 35px;
+
+  @media (min-width: vars.$tablet-width) {
+    margin-top: 39px;
+  }
 }
 
 .advantages__subtitle {
   padding-bottom: 16px;
-}
 
-.advantages__subdescription {
-  padding-bottom: 33px;
+  @media (min-width: vars.$tablet-width) {
+    padding-bottom: 23px;
+  }
 }
 
 .advantages__grey-item {
@@ -141,6 +218,11 @@
   }
 
   &--picture-left {
+    @media (width < vars.$tablet-width) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     @media (width >= vars.$tablet-width) {
       display: grid;
       grid-template-columns: 2fr 1fr;

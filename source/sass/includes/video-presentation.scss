@@ -1,18 +1,71 @@
+@use "../common/variables.scss" as vars;
+
 .video-presentation {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .video-presentation__title {
   margin: 0;
-  margin-top: 37px;
+
+  @media (width < vars.$tablet-width) {
+    margin-top: 17px;
+  }
+
+  @media (width >= vars.$tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-presentation__description {
   margin-top: 39px;
-  margin-bottom: 38px;
 }
 
 .video-presentation__image {
   width: 100%;
   object-fit: cover;
+}
+
+.video-presentation__wrapper {
+  @media (width < vars.$tablet-width) {
+    padding: 17px var(--side-offset, 20px) 38px;
+  }
+
+  @media (min-width: vars.$tablet-width) {
+    padding: 58px 102px 94px;
+  }
+}
+
+.video {
+  position: relative;
+
+  @media (width < vars.$tablet-width) {
+    padding: 0 var(--side-offset, 20px);
+  }
+
+  @media (min-width: vars.$tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    margin-bottom: 84px;
+  }
+}
+
+.video-presentation__play {
+  width: 48px;
+  height: 54px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }

@@ -1,0 +1,25 @@
+@use "../common/variables.scss" as vars;
+
+.photo-posts__like {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+
+  @media (width < vars.$tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.like-fill {
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: vars.$desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
+
+.like {
+  margin-left: 4px;
+}
