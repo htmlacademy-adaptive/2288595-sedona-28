@@ -1,0 +1,28 @@
+@use "../common/variables.scss" as vars;
+
+.modal-error {
+  width: 320px;
+  position: relative;
+  margin: auto;
+  padding: 45px 42px 35px 41px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+
+  @media (min-width: vars.$tablet-width) {
+    width: 400px;
+    padding: 38px 47px 49px 46px;
+  }
+}
+
+.modal-error-button {
+  padding: 16px 64px;
+  width: 180px;
+
+  @media (min-width: vars.$tablet-width) {
+    width: 272px;
+  }
+}
+
+.modal-container-close-error {
+  display: none;
+}

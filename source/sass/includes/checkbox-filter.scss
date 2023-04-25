@@ -1,22 +1,29 @@
 @use "../common/variables.scss" as vars;
 
-.checkbox-filter {
-  padding: 0;
-  margin-top: 48px;
-  border: none;
+// .checkbox-filter {
+//   padding: 0;
+//   margin-top: 48px;
+//   border: none;
 
-  @media (min-width: vars.$tablet-width) {
-    border-top: 1px solid #e5e5e5;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
+//   @media (width < vars.$tablet-width) {
+//     margin-top: 24px;
+//     border-width: 1px 0 0;
+//     border-style: solid;
+//     border-color: #e5e5e5;
+//   }
 
-  @media (min-width: vars.$desktop-width) {
-    border-top: 1px solid #e5e5e5;
-    margin-left: 120px;
-    margin-right: 120px;
-  }
-}
+//   @media (min-width: vars.$tablet-width) {
+//     border-top: 1px solid #e5e5e5;
+//     margin-left: 60px;
+//     margin-right: 60px;
+//   }
+
+//   @media (min-width: vars.$desktop-width) {
+//     border-top: 1px solid #e5e5e5;
+//     margin-left: 120px;
+//     margin-right: 120px;
+//   }
+// }
 
 .checkbox-filter__item {
   font-size: 18px;
@@ -47,11 +54,18 @@
   }
 }
 
-.checkbox-filter__title {
-  text-align: center;
+// .checkbox-filter__title {
+//   text-align: center;
 
-  @media (min-width: vars.$tablet-width) {
-    width: 400px;
-    padding: 0;
-  }
-}
+//   @media (width < vars.$tablet-width) {
+//     float: left;
+//     width: 100%;
+//     margin-top: 17px;
+//     margin-bottom: 24px;
+//   }
+
+//   @media (min-width: vars.$tablet-width) {
+//     width: 400px;
+//     padding: 0;
+//   }
+// }

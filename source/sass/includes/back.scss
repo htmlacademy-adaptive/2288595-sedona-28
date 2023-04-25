@@ -6,17 +6,31 @@
   align-items: center;
   min-height: 158px;
   padding: 0;
-  background-image: url("../img/catalog/back.jpg");
+  background-image: url("../img/catalog/back-mobile.jpg");
   background-color: vars.$background-image-color;
   background-size: cover;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/back-mobile@2x.jpg");
+  }
+
   @media (min-width: vars.$tablet-width) {
+    background-image: url("../img/catalog/back-tablet.jpg");
     min-height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: vars.$desktop-width) {
+    background-image: url("../img/catalog/back-desktop.jpg");
     min-height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/back-desktop@2x.jpg");
+    }
   }
 
   &::after {

@@ -6,6 +6,9 @@
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page__header">
@@ -43,7 +46,10 @@
     <main class="page__main">
       <section class="hero">
         <h1 class="page__hidden">Добро пожаловать в великолепную Седону!</h1>
-        <img class="hero__logo" src="img/title.svg" width="282" height="214" alt="Потому что Гранд-Каньон - отстой!.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/title-tablet.svg" width="461" height="350">
+          <img class="hero__logo" src="img/title-mobile.svg" width="282" height="214" alt="Потому что Гранд-Каньон - отстой!.">
+        </picture>
       </section>
       <section class="advantages">
         <h2 class="page__hidden">Преимущества</h2>
@@ -58,7 +64,11 @@
                   <h3 class="advantages__title advantages__title--white title">Настоящий городок</h3>
                   <p class="advantages__description advantages__description--white description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-              <img class="advantages__image" src="img/view-of-the-cafe-and-the-sedona-mountains.jpg" width="320" height="260" alt="Вид на кафе и горы Седоны">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/city-cafe-desktop.jpg 1x, img/city-cafe-desktop@2x.jpg 2x" width="800" height="256">
+                  <source media="(min-width: 768px)" srcset="img/city-cafe-tablet.jpg 1x, img/city-cafe-tablet@2x.jpg 2x" width="512" height="256">
+                  <img class="advantages__image" src="city-cafe-mobile.jpg" srcset="img/city-cafe-mobile@2x.jpg 2x" width="320" height="260" alt="Вид на кафе и горы Седоны." loading="lazy">
+                </picture>
             </div>
               <ul class="advantages__sublist">
                 <li class="advantages__subitem advantages__subitem--house">
@@ -77,7 +87,11 @@
             </li>
             <li class="advantages__panorama">
               <div class="advantages__picture advantages__picture--picture-left">
-                <img class="advantages__image" src="img/devils-bridge.jpg" width="320" height="260" alt="Мост дьявола в Седоне.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x" width="800" height="256">
+                  <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x" width="512" height="256">
+                  <img class="advantages__image" src="img/devils-bridge-mobile.jpg" srcset="img/devils-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола в Седоне..">
+                </picture>
                 <div class="advantages__item">
                   <h3 class="advantages__title advantages__title--white title">Там есть мост дьявола</h3>
                   <p class="advantages__description advantages__description--white description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -100,7 +114,7 @@
       </section>
       <section class="search-hotel">
         <div class="search-hotel__wrapper">
-          <h2 class="search-hotel__title search-hotel__title--larger-text">Заинтересовались?</h2>
+          <h2 class="search-hotel__title title title--large">Заинтересовались?</h2>
           <p class="search-hotel__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         </div>
         <button class="search-hotel__button button" type="button">Найти гостиницу</button>

@@ -15,19 +15,7 @@
 }
 
 .search-hotel__title {
-  margin: 0;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
-
-  &--larger-text {
-    @media (0 < width < vars.$tablet-width) {
-      font-size: 21px;
-      line-height: 26px;
-    }
-  }
 }
 
 .search-hotel__description {

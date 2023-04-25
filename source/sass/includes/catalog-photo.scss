@@ -1,6 +1,6 @@
 @use "../common/variables.scss" as vars;
 
-.photo-post {
+.catalog-photo {
   position: relative;
   margin: 0;
 
@@ -9,7 +9,7 @@
   }
 }
 
-.photo-post:nth-child(2n+3) {
+.catalog-photo:nth-child(2n+3) {
   @media (vars.$tablet-width <= width < vars.$desktop-width) {
     background-color: #e5e5e5;
   }

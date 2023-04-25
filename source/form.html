@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page__header">
@@ -43,7 +47,10 @@
       <div class="back">
         <div class="back__wrapper">
           <h1 class="page__hidden">Прекрасный город Седона!</h1>
-          <img class="back__logo" src="img/catalog/sedona.svg" alt="Добро пожаловать в великолепную Седону!">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/catalog/sedona-tablet.svg" width="458" height="78">
+            <img class="back__logo" src="img/catalog/sedona-mobile.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону!">
+          </picture>
         </div>
       </div>
       <section class="review">
@@ -54,8 +61,8 @@
       </section>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="fieldset-form-block">
-          <fieldset class="fieldset-form">
-            <legend class="fieldset-form__title title">Представьтесь:</legend>
+          <fieldset class="fieldset-form fieldset-properties-line fieldset-properties-line--grid">
+            <legend class="fieldset-form__title title fieldset-properties">Представьтесь:</legend>
             <ul class="fieldset-form__list">
               <li class="fieldset-form__item description fieldset-top">
                 <label class="fieldset-form__label" for="your-name">Имя<span aria-hidden="true">*</span>:</label>
@@ -71,8 +78,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="fieldset-form">
-            <legend class="fieldset-form__title title">Контактная информация:</legend>
+          <fieldset class="fieldset-form fieldset-properties-line fieldset-properties-line--grid">
+            <legend class="fieldset-form__title title fieldset-properties">Контактная информация:</legend>
             <ul class="fieldset-form__list">
               <li class="fieldset-form__item description fieldset-top">
                 <label class="fieldset-form__label" for="your-phone">Контактный телефон<span aria-hidden="true">*</span>:</label>
@@ -96,8 +103,8 @@
           </fieldset>
         </div>
 
-        <fieldset class="radio-filter">
-          <legend class="radio-filter__title title">Ваше общее впечатление:</legend>
+        <fieldset class="radio-filter fieldset-properties-line">
+          <legend class="radio-filter__title title fieldset-properties">Ваше общее впечатление:</legend>
           <ul class="radio-filter__list">
             <li class="radio-filter__item fieldset-top">
               <label class="control">
@@ -122,8 +129,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="checkbox-filter">
-          <legend class="checkbox-filter__title title">Посещенные достопримечательности:</legend>
+        <fieldset class="checkbox-filter fieldset-properties-line">
+          <legend class="checkbox-filter__title title fieldset-properties">Посещенные достопримечательности:</legend>
           <ul class="checkbox-filter__list">
             <li class="checkbox-filter__item fieldset-top">
               <label class="control">
@@ -155,8 +162,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="fieldset-form fieldset-form--textarea">
-          <legend class="fieldset-form__title fieldset-form__title--textarea title" id="emotions-title">Опишите свои эмоции:</legend>
+        <fieldset class="fieldset-form fieldset-form--textarea fieldset-properties-line">
+          <legend class="fieldset-form__title fieldset-form__title--textarea title fieldset-properties" id="emotions-title">Опишите свои эмоции:</legend>
           <ul class="fieldset-form__list">
             <li class="fieldset-form__item fieldset-top">
               <label for="your-emotions">
@@ -206,6 +213,26 @@
         </a>
       </small>
   </footer>
+  <div class="modal-container modal-container-close-error">
+    <div class="modal-error modal-search">
+      <section class="modal-content">
+        <h2 class="modal-error-title modal-title title">Что-то пошло не так!</h2>
+        <p class="modal-error-text modal-text description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-error-button button" type="submit">ок</button>
+      </section>
+    </div>
+  </div>
+  <div class="modal-container modal-container-close-feedback">
+    <div class="modal-feedback modal-search">
+      <section class="modal-content">
+        <h2 class="modal-feedback-title modal-title title">Ваш отзыв отправлен!</h2>
+        <p class="modal-feedback-text modal-text description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="feedback-button">
+          <button class="modal-feedback-button button" type="submit">Закрыть окно</button>
+        </div>
+      </section>
+    </div>
+  </div>
   <script src="js/burger-navigation.js"></script>
   </body>
 </html>
