@@ -1,45 +1,13 @@
 import gulp from 'gulp';
-import plumber from 'gulp-plumber';
-import sass from 'gulp-dart-sass';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import browser from 'browser-sync';
+import cache from "gulp-cache";
 
-// Styles
+import { cleanBuild } from './tasks/clean.mjs';
+import { setDev, setProd } from './tasks/mode.mjs';
+import { initialBuild, startServer } from './tasks/serve.mjs';
 
-export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
+export { lintMarkup as lint } from "./tasks/lint.mjs";
 
-// Server
+export const clearCache = cache.clearAll;
 
-const server = (done) => {
-  browser.init({
-    server: {
-      baseDir: 'source'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
-// Watcher
-
-const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
-}
-
-
-export default gulp.series(
-  styles, server, watcher
-);
+export default gulp.series(cleanBuild, setDev, initialBuild, startServer);
+export const build = gulp.series(cleanBuild, setProd, initialBuild);
