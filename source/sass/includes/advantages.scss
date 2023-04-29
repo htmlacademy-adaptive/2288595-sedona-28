@@ -6,6 +6,10 @@
   counter-set: motive;
 }
 
+.advantages picture {
+  display: flex;
+}
+
 .advantages__panorama {
   background-color: vars.$base-color;
   text-align: center;
@@ -60,7 +64,7 @@
     background-size: 39px 36px;
     text-align: left;
     min-height: 92px;
-    padding: 23px 18px 0 47px;
+    padding: 31px 0 2px 45px;
   }
 
 
@@ -139,11 +143,16 @@
 
   @media (0 < width < vars.$tablet-width) {
     min-height: 211px;
-    padding: 54px 18px 40px;
+    padding: 55px 18px 41px;
 
     &--grey {
-      padding: 24px 26px;
-      min-height: 165px;
+      padding: 23px 37px;
+      min-height: 166px;
+    }
+
+    &--blue {
+      padding: 37px 18px 0;
+      min-height: 191px;
     }
   }
 }
@@ -160,7 +169,7 @@
 }
 
 .advantages__wrapper {
-  padding: 32px 31px 32px;
+  padding: 32px 30px 33px 29px;
   min-height: 157px;
   text-align: center;
 
@@ -177,11 +186,11 @@
       display: block;
       content: "";
       position: absolute;
-      height: 57px;
+      height: 55px;
       background-color: #ffffff;
       width: 100%;
       right: 0;
-      clip-path: polygon(0 44%, 100% 44%, 100% 54%, 50% 100%, 0 54%);
+      clip-path: polygon(0 0, 100% 0, 100% 74%, 50% 100%, 0 74%);
     }
   }
 }

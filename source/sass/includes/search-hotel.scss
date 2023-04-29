@@ -19,7 +19,7 @@
 }
 
 .search-hotel__description {
-  margin-top: 31px;
+  margin-top: 21px;
 }
 
 .search-hotel__button {
@@ -34,7 +34,7 @@
 
 .search-hotel__wrapper {
   @media (0 < width < vars.$tablet-width) {
-    padding: 39px 29px 32px 29px;
+    padding: 42px 29px 32px 29px;
   }
 
   @media (min-width: vars.$tablet-width) {

@@ -3,6 +3,7 @@
 .catalog-photo {
   position: relative;
   margin: 0;
+  width: 100%;
 
   @media (vars.$tablet-width <= width < vars.$desktop-width) {
     background-color: #f2f2f2;
