@@ -2,6 +2,7 @@
 
 .photo-posts {
   display: grid;
+  justify-items: center;
   background-color: #ffffff;
   margin: 0;
   list-style: none;
@@ -54,4 +55,8 @@
   @media (min-width: vars.$desktop-width) {
     color: #ffffff;
   }
+}
+
+.photo-posts__image {
+  background-color: vars.$background-image-color;
 }

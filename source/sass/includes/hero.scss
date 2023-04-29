@@ -5,24 +5,39 @@
   justify-content: space-evenly;
   align-items: center;
   min-height: 389px;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-color: vars.$background-image-color;
   background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 
   @media (min-width: vars.$tablet-width) {
+    background-image: url("../img/hero-tablet.jpg");
     min-height: 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: vars.$desktop-width) {
     min-height: 518px;
+    background-image: url("../img/hero-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   &::after {
     display: block;
     content: "";
     position: absolute;
-    height: 57px;
+    height: 26px;
     background-color: #ffffff;
     width: 100%;
     bottom: 0;
@@ -37,16 +52,7 @@
 }
 
 .hero__logo {
-  width: 282px;
-  height: 214px;
-
-  @media (min-width: vars.$tablet-width) {
-    width: 461px;
-    height: 350px;
-  }
-
-  @media (min-width: vars.$desktop-width) {
-    width: 460px;
-    height: 350px;
-  }
+  object-fit: cover;
+  width: 100%;
+  margin-top: 10px;
 }

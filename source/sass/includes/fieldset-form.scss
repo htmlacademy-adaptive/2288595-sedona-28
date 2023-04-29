@@ -7,19 +7,11 @@
 
   @media (width < vars.$tablet-width) {
     padding: 0 var(--side-offset, 20px);
+    margin-top: 70px;
   }
 }
 
 .fieldset-form {
-  border: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 56px;
-
-  @media (width < vars.$tablet-width) {
-    margin-top: 53px;
-  }
-
   &--textarea {
     @media (min-width: vars.$tablet-width) {
       margin: 42px 60px 48px 60px;
@@ -34,12 +26,6 @@
 }
 
 .fieldset-form__title {
-  text-align: center;
-
-  @media (width < vars.$tablet-width) {
-    margin-bottom: 4px;
-  }
-
   &--textarea {
     @media (min-width: vars.$tablet-width) {
       width: 400px;

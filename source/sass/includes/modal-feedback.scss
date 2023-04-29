@@ -1,0 +1,55 @@
+@use "../common/variables.scss" as vars;
+
+.modal-feedback {
+  width: 320px;
+  position: relative;
+  margin: auto;
+  padding: 36px 39px 20px 37px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  z-index: 10;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    width: 320px;
+    height: 98px;
+    background-color: #f2f2f2;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  @media (min-width: vars.$tablet-width) {
+    width: 640px;
+    padding: 58px 99px 44px 91px;
+
+    &::after {
+      width: 640px;
+      height: 146px;
+    }
+  }
+}
+
+.modal-feedback-button {
+  padding: 16px 64px;
+  width: 280px;
+
+  @media (min-width: vars.$tablet-width) {
+    width: 458px;
+  }
+}
+
+.modal-container-close-feedback {
+  display: none;
+}
+
+.modal-feedback-text {
+  margin-bottom: 74px;
+
+  @media (min-width: vars.$tablet-width) {
+    margin-bottom: 80px;
+  }
+}

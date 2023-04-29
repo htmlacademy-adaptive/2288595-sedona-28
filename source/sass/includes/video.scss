@@ -1,12 +1,22 @@
 @use "../common/variables.scss" as vars;
 
-.video-presentation {
+.video {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
-.video-presentation__title {
+.video__wrapper {
+  @media (width < vars.$tablet-width) {
+    padding: 17px var(--side-offset, 20px) 38px;
+  }
+
+  @media (min-width: vars.$tablet-width) {
+    padding: 58px 102px 94px;
+  }
+}
+
+.video__title {
   margin: 0;
 
   @media (width < vars.$tablet-width) {
@@ -18,7 +28,7 @@
   }
 }
 
-.video-presentation__description {
+.video__description {
   margin-top: 39px;
 }
 
@@ -27,17 +37,7 @@
   object-fit: cover;
 }
 
-.video-presentation__wrapper {
-  @media (width < vars.$tablet-width) {
-    padding: 17px var(--side-offset, 20px) 38px;
-  }
-
-  @media (min-width: vars.$tablet-width) {
-    padding: 58px 102px 94px;
-  }
-}
-
-.video {
+.video-presentation {
   position: relative;
 
   @media (width < vars.$tablet-width) {
