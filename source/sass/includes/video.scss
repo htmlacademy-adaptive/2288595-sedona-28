@@ -7,8 +7,10 @@
 }
 
 .video__wrapper {
+  padding: 0;
+
   @media (width < vars.$tablet-width) {
-    padding: 17px var(--side-offset, 20px) 38px;
+    padding: 0 23px 39px 25px;
   }
 
   @media (min-width: vars.$tablet-width) {
@@ -29,7 +31,7 @@
 }
 
 .video__description {
-  margin-top: 39px;
+  margin-top: 26px;
 }
 
 .video-presentation__image {

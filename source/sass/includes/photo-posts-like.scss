@@ -1,12 +1,16 @@
 @use "../common/variables.scss" as vars;
 
 .photo-posts__like {
+  font-family: "PT Sans";
   background-color: transparent;
   border: transparent;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
+  height: 26px;
 
   @media (width < vars.$tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 }
 
@@ -22,4 +26,8 @@
 
 .like {
   margin-left: 4px;
+}
+
+.photo-posts__like .like {
+  margin-left: 10px;
 }
