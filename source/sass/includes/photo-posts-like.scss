@@ -1,7 +1,7 @@
 @use "../common/variables.scss" as vars;
 
 .photo-posts__like {
-  font-family: "PT Sans";
+  font-family: inherit;
   background-color: transparent;
   border: transparent;
   cursor: pointer;

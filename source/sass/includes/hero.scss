@@ -11,7 +11,7 @@
   position: relative;
   background-repeat: no-repeat;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 
@@ -19,7 +19,7 @@
     background-image: url("../img/hero-tablet.jpg");
     min-height: 518px;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
@@ -28,7 +28,7 @@
     min-height: 518px;
     background-image: url("../img/hero-desktop.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
   }

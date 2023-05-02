@@ -11,7 +11,7 @@
   background-size: cover;
   position: relative;
 
-  @media (min-resolution: 2dppx) {
+  @media (resolution >= 2dppx) {
     background-image: url("../img/catalog/back-mobile@2x.jpg");
   }
 
@@ -19,7 +19,7 @@
     background-image: url("../img/catalog/back-tablet.jpg");
     min-height: 290px;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/catalog/back-tablet@2x.jpg");
     }
   }
@@ -28,7 +28,7 @@
     background-image: url("../img/catalog/back-desktop.jpg");
     min-height: 301px;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/catalog/back-desktop@2x.jpg");
     }
   }

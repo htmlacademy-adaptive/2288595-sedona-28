@@ -2,7 +2,7 @@
 
 .photo-posts__info {
   @media (min-width: vars.$tablet-width) {
-    padding: 22px 20px 16px 20px;
+    padding: 22px 20px 16px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -14,10 +14,7 @@
     justify-content: space-between;
     align-items: stretch;
     padding: 20px;
-    top: auto;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: hsla(0, 0%, 0%, 0.3);
+    inset: auto 0 0;
+    background-color: hsl(0deg 0% 0% / 30%);
   }
 }
