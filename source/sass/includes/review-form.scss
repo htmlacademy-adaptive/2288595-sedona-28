@@ -2,7 +2,7 @@
 
 .review-form__button {
   font-size: 21px;
-  padding: 16px 49px 16px 49px;
+  padding: 16px 49px;
 
   @media (min-width: vars.$tablet-width) {
     width: 324px;
@@ -21,7 +21,7 @@
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
-  color: hsla(0, 0%, 20%, 0.6);
+  color: hsl(0deg 0% 20% / 60%);
   text-transform: uppercase;
   margin-left: auto;
 }

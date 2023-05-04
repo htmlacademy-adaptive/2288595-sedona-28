@@ -6,11 +6,11 @@
 
 .photo-video__wrapper {
   text-align: center;
-  padding: 67px 95px 67px;
+  padding: 67px 95px;
 
 
   @media (width < vars.$tablet-width) {
-    padding: 30px var(--side-offset, 20px) 42px;
+    padding: 37px var(--side-offset, 20px);
   }
 
   @media (min-width: vars.$tablet-width) {
@@ -19,7 +19,7 @@
 }
 
 .photo-video__description {
-  margin-top: 38px;
+  margin-top: 25px;
 }
 
 .photo-video__title {

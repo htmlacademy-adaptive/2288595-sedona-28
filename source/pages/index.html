@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body class="page__body">
+    <header class="page__header">
+      <a class="page__header-logo" href="index.html">
+        <img class="logo-sedona-image" src="img/logo-city-of-sedona.svg" width="185" height="96" alt="Логотип City of Sedona.">
+      </a>
+      <nav class="main-nav">
+        <button class="burger main-nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false" hidden>
+          <span class="burger__toggle"></span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--page">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Html Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__main">
+      <section class="hero">
+        <h1 class="page__hidden">Добро пожаловать в великолепную Седону!</h1>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/title-tablet.svg" width="461" height="350">
+          <img class="hero__logo" src="img/title-mobile.svg" width="282" height="214" alt="Потому что Гранд-Каньон - отстой!.">
+        </picture>
+      </section>
+      <section class="advantages">
+        <h2 class="page__hidden">Преимущества</h2>
+        <div class="advantages__wrapper">
+          <strong class="advantages__intro title">Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
+          <p class="advantages__text description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+          <ol class="advantages__list">
+            <li class="advantages__panorama">
+              <div class="advantages__picture advantages__picture--picture-right">
+                <div class="advantages__item">
+                  <h3 class="advantages__title advantages__title--white title">Настоящий городок</h3>
+                  <p class="advantages__description advantages__description--white description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/city-cafe-desktop.webp 1x, img/city-cafe-desktop@2x.webp 2x" width="800" height="256">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/city-cafe-tablet.webp 1x, img/city-cafe-tablet@2x.webp 2x" width="512" height="256">
+                  <source type="image/webp" srcset="img/city-cafe-mobile.webp 1x, img/city-cafe-mobile@2x.webp 2x" width="320" height="260">
+                  <source media="(min-width: 1200px)" srcset="img/city-cafe-desktop.jpg 1x, img/city-cafe-desktop@2x.jpg 2x" width="800" height="256">
+                  <source media="(min-width: 768px)" srcset="img/city-cafe-tablet.jpg 1x, img/city-cafe-tablet@2x.jpg 2x" width="512" height="256">
+                  <img class="advantages__image" src="img/city-cafe-mobile.jpg" srcset="img/city-cafe-mobile@2x.jpg 2x" width="320" height="260" alt="Вид на кафе и горы Седоны." loading="lazy">
+                </picture>
+            </div>
+              <ul class="advantages__sublist">
+                <li class="advantages__subitem advantages__subitem--house">
+                  <h3 class="advantages__subtitle title">Жилье</h3>
+                  <p class="advantages__subdescription description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </li>
+                <li class="advantages__subitem advantages__subitem--food">
+                  <h3 class="advantages__subtitle title">Еда</h3>
+                  <p class="advantages__subdescription description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="advantages__subitem advantages__subitem--gift">
+                  <h3 class="advantages__subtitle title">Сувениры</h3>
+                  <p class="advantages__subdescription description">Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
+            </li>
+            <li class="advantages__panorama">
+              <div class="advantages__picture advantages__picture--picture-left">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.webp 1x, img/devils-bridge-desktop@2x.webp 2x" width="800" height="256">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-tablet.webp 1x, img/devils-bridge-tablet@2x.webp 2x" width="512" height="256">
+                  <source type="image/webp" srcset="img/devils-bridge-mobile.webp 1x, img/devils-bridge-mobile@2x.webp 2x" width="320" height="260">
+                  <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x" width="800" height="256">
+                  <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x" width="512" height="256">
+                  <img class="advantages__image" src="img/devils-bridge-mobile.jpg" srcset="img/devils-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола в Седоне..">
+                </picture>
+                <div class="advantages__item advantages__item--blue">
+                  <h3 class="advantages__title advantages__title--white title">Там есть мост дьявола</h3>
+                  <p class="advantages__description advantages__description--white description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+              </div>
+            </li>
+              <li class="advantages__item advantages__item--grey">
+                <h3 class="advantages__title title">Небольшая площадь</h3>
+                <p class="advantages__description description">Все интересные места находятся очень близко</p>
+              </li>
+              <li class="advantages__item advantages__item--grey">
+                  <h3 class="advantages__title title">Красивая дорога</h3>
+                  <p class="advantages__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="advantages__item advantages__item--grey">
+                  <h3 class="advantages__title title">Мало туристов</h3>
+                  <p class="advantages__description description">Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+          </ol>
+      </section>
+      <section class="search-hotel">
+        <div class="search-hotel__wrapper">
+          <h2 class="search-hotel__title title title--large">Заинтересовались?</h2>
+          <p class="search-hotel__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        </div>
+        <button class="search-hotel__button button" type="button">Найти гостиницу</button>
+      </section>
+      <div class="map">
+        <h2 class="page__hidden">Расположение прекрасного города Седона</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18601.84246316437!2d-111.76103479151311!3d34.86859704228694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1681052024267!5m2!1sru!2sru" width="320" height="350" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </main>
+    <footer class="page__footer">
+        <div class="page__footer-hashtag hashtag">
+          <a class="hashtag-sedona" href="">#visitSEDONA</a>
+        </div>
+        <div class="page__footer-social social">
+          <h2 class="page__hidden">Социальные сети.</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk button" href="https://vk.com/htmlacademy">
+                <svg class="social-path" width="24" height="24">
+                  <use href="img/stack.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
+                <svg class="social-path" width="22" height="18">
+                  <use href="img/stack.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social-path" width="20" height="14">
+                  <use href="img/stack.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <small class="page__footer-development development">
+          <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <small class="development__text">Разработано</small>
+            <svg class="development-icon-path"  width="27" height="35">
+              <use href="img/stack.svg#academy"></use>
+            </svg>
+          </a>
+        </small>
+    </footer>
+    <script src="js/burger-navigation.js"></script>
+  </body>
+</html>

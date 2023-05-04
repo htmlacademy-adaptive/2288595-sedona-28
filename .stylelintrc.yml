@@ -1,0 +1,64 @@
+extends: stylelint-config-standard-scss
+
+rules:
+  annotation-no-unknown: true
+  at-rule-no-vendor-prefix: true
+
+  color-hex-alpha: never
+  color-hex-length: long
+  color-named : never
+  color-no-hex : null
+  color-no-invalid-hex : true
+
+  custom-property-no-missing-var-function: true
+
+  declaration-block-no-duplicate-properties: true
+  declaration-no-important: true
+  declaration-property-max-values: null
+
+  font-family-name-quotes: always-unless-keyword
+  font-family-no-missing-generic-family-keyword : true
+  font-weight-notation:
+    - numeric
+    - ignore: [relative]
+
+  function-calc-no-unspaced-operator: true
+  function-name-case: lower
+  function-no-unknown:
+    - true
+    - ignoreFunctions: [ fade ] #  less function
+
+  import-notation: null
+  keyframe-block-no-duplicate-selectors : true
+  keyframe-declaration-no-important : true
+  length-zero-no-unit:
+    - true
+    - ignore: ['custom-properties']
+      ignoreFunctions:  ['/^--/']
+
+  max-nesting-depth : [2, { ignoreAtRules: [media] }]
+  media-feature-name-no-vendor-prefix: true
+  no-descending-specificity : null
+  no-duplicate-at-import-rules : true
+  no-invalid-position-at-import-rule: true
+  number-max-precision: 2
+  property-allowed-list: null
+  property-disallowed-list: null
+
+  selector-class-pattern: ""
+
+  rule-empty-line-before:
+    - always
+    - except: [first-nested]
+      ignore: [after-comment]
+  rule-selector-property-disallowed-list: null
+
+  selector-attribute-quotes: always
+  selector-max-id: 0
+  selector-max-universal: 2
+  selector-not-notation: simple
+  selector-pseudo-element-colon-notation: double
+  selector-type-case: lower
+  selector-type-no-unknown: true
+
+  value-keyword-case: [lower, { camelCaseSvgKeywords : true }]

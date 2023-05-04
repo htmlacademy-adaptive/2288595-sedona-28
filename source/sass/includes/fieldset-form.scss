@@ -14,12 +14,12 @@
 .fieldset-form {
   &--textarea {
     @media (min-width: vars.$tablet-width) {
-      margin: 42px 60px 48px 60px;
+      margin: 42px 60px 48px;
       border-top: 1px solid #e5e5e5;
     }
 
     @media (min-width: vars.$desktop-width) {
-      margin: 56px 120px 48px 120px;
+      margin: 56px 120px 48px;
       border-top: 1px solid #e5e5e5;
     }
   }
@@ -40,8 +40,7 @@
 
 .fieldset-form__item {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 .fieldset-form-block {

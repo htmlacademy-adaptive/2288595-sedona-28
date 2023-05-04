@@ -29,12 +29,12 @@
 
   @media (min-width: vars.$tablet-width) {
     border-top: 1px solid #e5e5e5;
-    margin: 63px 60px 0 60px;
+    margin: 63px 60px 0;
   }
 
   @media (min-width: vars.$desktop-width) {
     border-top: 1px solid #e5e5e5;
-    margin: 71px 120px 0 120px;
+    margin: 71px 120px 0;
   }
 
   &--grid {

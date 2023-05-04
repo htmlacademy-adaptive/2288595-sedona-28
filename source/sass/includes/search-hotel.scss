@@ -34,7 +34,7 @@
 
 .search-hotel__wrapper {
   @media (0 < width < vars.$tablet-width) {
-    padding: 42px 29px 32px 29px;
+    padding: 42px 29px 32px;
   }
 
   @media (min-width: vars.$tablet-width) {

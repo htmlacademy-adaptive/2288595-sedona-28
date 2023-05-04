@@ -8,23 +8,23 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: hsla(0, 0%, 100%, 1);
+  color: hsl(0deg 0% 100% / 100%);
   background-color: vars.$base-color;
   border: none;
   text-decoration: none;
   cursor: pointer;
 
   &:hover {
-    background-color: hsla(203, 42%, 58%, 1);
+    background-color: hsl(203deg 42% 58% / 100%);
   }
 
   &:active {
-    background-color: hsla(202, 44%, 54%, 1);
-    color: hsla(0, 0%, 100%, 0.3);
+    background-color: hsl(202deg 44% 54% / 100%);
+    color: hsl(0deg 0% 100% / 30%);
   }
 
   &:disabled {
-    background-color: hsla(0, 0%, 90%, 1);
+    background-color: hsl(0deg 0% 90% / 100%);
     cursor: default;
   }
 }
