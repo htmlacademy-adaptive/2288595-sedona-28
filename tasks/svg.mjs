@@ -3,11 +3,11 @@ import svgo from "gulp-svgmin";
 import { stacksvg } from "gulp-stacksvg";
 import { readdir } from "fs/promises";
 
-const ICONS_PATH = "source/img";
+const ICONS_PATH = "source/icons";
 const DEST_PATH = "build/img";
 function optimizeVector() {
 	return gulp
-		.src("source/img/**/*.svg")
+		.src("source/images/**/*.svg")
 		.pipe(svgo())
 		.pipe(gulp.dest(DEST_PATH));
 }

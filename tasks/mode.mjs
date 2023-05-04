@@ -1,7 +1,7 @@
 /**
  * @param {"production" | "development"} mode
  */
-function setMode(mode = "development") {
+ function setMode(mode = "development") {
 	process.env.NODE_ENV = mode;
 }
 

@@ -8,7 +8,7 @@ const OPTIONS = createOptionsFormat();
 
 function processImages() {
 	return gulp
-		.src("source/img/**/*.{png,jpg}")
+		.src("source/images/*.{png,jpg}")
 		.pipe(cache(sharpResponsive(OPTIONS)))
 		.pipe(gulp.dest("build/img"));
 }
@@ -16,7 +16,7 @@ function processImages() {
 function createOptionsFormat() {
 	const formats = [];
 
-	for (const format of [undefined, "avif", "webp"]) {
+	for (const format of [undefined, "webp"]) {
 		formats.push(
 			{
 				width: RE_SIZERS[0],
