@@ -29,7 +29,8 @@
   margin-top: 16px;
   margin-left: 12px;
   content: " ";
-  background: url("../img/checkmark.svg");
+  mask-image: url("../img/stack.svg#checkmark");
+  background-color: #333333;
   background-repeat: no-repeat;
 }
 
@@ -45,4 +46,13 @@
   height: 16px;
   background-color: #333333;
   border-radius: 50%;
+}
+
+.control-mark:hover {
+  background-color: #e5e5e5;
+}
+
+.control-input:active + .control-mark {
+  background-color: #d5d5d5;
+  color: hsl (0, 0%, 20%, 0.3);
 }

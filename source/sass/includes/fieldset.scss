@@ -6,6 +6,23 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  background-color: hsl(0deg 0% 95% / 100%);
-  border: none;
+  background-color: #f2f2f2;
+  border: 4px solid transparent;
 }
+
+.fieldset:hover,
+.fieldset:focus {
+  background-color: #e5e5e5;
+}
+
+.fieldset:active {
+  border: 4px solid #e5e5e5;
+  outline: none;
+  background-color: #ffffff;
+}
+
+// .fieldset:not(:placeholder-shown) {
+//   background-color: #f2f2f2;
+//   color: #000000;
+//   opacity: 0.3;
+// }
