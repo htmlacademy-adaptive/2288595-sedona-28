@@ -6,7 +6,7 @@
   }
 
   .main-nav__toggle[aria-expanded="true"] .burger__toggle {
-    background: url("../img/icon-cross.svg");
+    background-image: url("../img/stack.svg#cross");
   }
 
   .main-nav--enabled {
@@ -54,7 +54,7 @@
   display: block;
   width: 23px;
   height: 22px;
-  background: url("../img/icon-menu.svg");
+  background-image: url("../img/stack.svg#menu");
   background-repeat: no-repeat;
 }
 

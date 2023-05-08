@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Седона</title>
+    <title>Отправка отзыва о прекрасном городе Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="img/back-mobile@2x.jpg" as="image">
   </head>
   <body class="page__body">
     <header class="page__header">
@@ -31,7 +34,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--page">
+            <a class="main-nav__link main-nav__link--page" href="#">
               Форма отзыва
             </a>
           </li>
@@ -188,7 +191,7 @@
     </main>
     <footer class="page__footer">
       <div class="page__footer-hashtag hashtag">
-        <a class="hashtag-sedona" href="">#visitSEDONA</a>
+        <a class="hashtag-sedona" href="#">#visitSEDONA</a>
       </div>
       <div class="page__footer-social social">
         <h2 class="page__hidden">Социальные сети.</h2>
@@ -198,6 +201,7 @@
               <svg class="social-path" width="24" height="24">
                 <use href="img/stack.svg#vk"></use>
               </svg>
+              <span class="visually-hidden">ВКонтакте.</span>
             </a>
           </li>
           <li class="social__item">
@@ -205,6 +209,7 @@
               <svg class="social-path" width="22" height="18">
                 <use href="img/stack.svg#telegram"></use>
               </svg>
+              <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
           <li class="social__item">
@@ -212,6 +217,7 @@
               <svg class="social-path" width="20" height="14">
                 <use href="img/stack.svg#youtube"></use>
               </svg>
+              <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
         </ul>
@@ -224,7 +230,7 @@
           </svg>
         </a>
       </small>
-  </footer>
+    </footer>
   <div class="modal-container modal-container-close-error">
     <div class="modal-error modal-search">
       <section class="modal-content">

@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Седона</title>
+    <title>Фотографии и видео прекрасного города Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="img/back-mobile@2x.jpg" as="image">
   </head>
   <body class="page__body">
     <header class="page__header">
@@ -26,7 +29,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--page">
+            <a class="main-nav__link main-nav__link--page" href="#">
               Фото и видео
             </a>
           </li>
@@ -67,7 +70,7 @@
             <source type="image/webp" srcset="img/non-native-spaces-mobile.webp 1x, img/non-native-spaces-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desktop.jpg 1x, img/non-native-spaces-desktop@2x.jpg 2x" width="1200" height="400">
             <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.jpg 1x, img/non-native-spaces-tablet@2x.jpg 2x" width="648" height="400">
-            <img class="photo-posts__image" src="img/non-native-spaces-mobile.jpg" srcset="img/non-native-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца.">
+            <img class="photo-posts__image" src="img/non-native-spaces-mobile.jpg" srcset="img/non-native-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца." loading="lazy">
           </picture>
           <div class="photo-posts__info photo-posts__info--panorama">
             <div class="photo-posts__name">
@@ -89,7 +92,7 @@
             <source type="image/webp" srcset="img/plants-mobile.webp 1x, img/plants-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)" srcset="img/plants-desktop.jpg 1x, img/plants-desktop@2x.jpg 2x" width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/plants-tablet.jpg 1x, img/plants-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-posts__image" src="img/plants-mobile.jpg" srcset="img/plants-mobile@2x.jpg 2x" width="280" height="280" alt="Лесная дорога в Седоне.">
+            <img class="photo-posts__image" src="img/plants-mobile.jpg" srcset="img/plants-mobile@2x.jpg 2x" width="280" height="280" alt="Лесная дорога в Седоне." loading="lazy">
           </picture>
           <div class="photo-posts__info">
             <div class="photo-posts__name">
@@ -111,7 +114,7 @@
             <source type="image/webp" srcset="img/road-and-forest-mobile.webp 1x, img/road-and-forest-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)" srcset="img/road-and-forest-desktop.jpg 1x, img/road-and-forest-desktop@2x.jpg 2x" width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/road-and-forest-tablet.jpg 1x, img/road-and-forest-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-posts__image" src="img/road-and-forest-mobile.jpg" srcset="img/road-and-forest-mobile@2x.jpg 2x" width="280" height="280" alt="Растения в Седоне.">
+            <img class="photo-posts__image" src="img/road-and-forest-mobile.jpg" srcset="img/road-and-forest-mobile@2x.jpg 2x" width="280" height="280" alt="Растения в Седоне." loading="lazy">
           </picture>
           <div class="photo-posts__info">
             <div class="photo-posts__name">
@@ -133,7 +136,7 @@
             <source type="image/webp" srcset="img/devils-bridge-catalog-mobile.webp 1x, img/devils-bridge-catalog-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)" srcset="img/devils-bridge-catalog-desktop.jpg 1x, img/devils-bridge-catalog-desktop@2x.jpg 2x" width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/devils-bridge-catalog-tablet.jpg 1x, img/devils-bridge-catalog-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-posts__image" src="img/devils-bridge-catalog-mobile.jpg" srcset="img/devils-bridge-catalog-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+            <img class="photo-posts__image" src="img/devils-bridge-catalog-mobile.jpg" srcset="img/devils-bridge-catalog-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола." loading="lazy">
           </picture>
           <div class="photo-posts__info">
             <div class="photo-posts__name">
@@ -162,7 +165,7 @@
               <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x" width="280" height="177">
               <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800" height="500">
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="648" height="500">
-              <img class="video-presentation__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео тура по Седоне.">
+              <img class="video-presentation__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео тура по Седоне." loading="lazy">
             </picture>
             <!-- Скрыта атрибутом hidden, так как js пока нет -->
           <span class="page__hidden">Включить видео</span>
@@ -175,7 +178,7 @@
     </main>
     <footer class="page__footer">
       <div class="page__footer-hashtag hashtag">
-        <a class="hashtag-sedona" href="">#visitSEDONA</a>
+        <a class="hashtag-sedona" href="#">#visitSEDONA</a>
       </div>
       <div class="page__footer-social social">
         <h2 class="page__hidden">Социальные сети.</h2>
@@ -185,6 +188,7 @@
               <svg class="social-path" width="24" height="24">
                 <use href="img/stack.svg#vk"></use>
               </svg>
+              <span class="visually-hidden">ВКонтакте.</span>
             </a>
           </li>
           <li class="social__item">
@@ -192,6 +196,7 @@
               <svg class="social-path" width="22" height="18">
                 <use href="img/stack.svg#telegram"></use>
               </svg>
+              <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
           <li class="social__item">
@@ -199,6 +204,7 @@
               <svg class="social-path" width="20" height="14">
                 <use href="img/stack.svg#youtube"></use>
               </svg>
+              <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
         </ul>
@@ -211,7 +217,7 @@
           </svg>
         </a>
       </small>
-  </footer>
+    </footer>
   <script src="js/burger-navigation.js"></script>
   </body>
 </html>
