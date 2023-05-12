@@ -8,6 +8,16 @@
   text-transform: uppercase;
   color: #000000;
 
+  br {
+    display: none;
+  }
+
+  @media (min-width: vars.$tablet-width) {
+    br {
+      display: initial;
+    }
+  }
+
   &--large {
     font-size: 21px;
   }

@@ -59,11 +59,11 @@
       <section class="photo-video">
         <div class="photo-video__wrapper">
           <h2 class="photo-video__title title">Фото и видео</h2>
-          <p class="photo-video__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="photo-video__description description">Не можете решиться на путешествие из-за курса? <br> Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </section>
       <ul class="photo-posts">
-        <li class="catalog-photo photo-posts__item photo-posts__item--panorama">
+        <li class="catalog-photo photo-posts__item photo-posts__item--panorama photo-posts-line">
           <picture class="photo-posts__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/non-native-spaces-desktop.webp 1x, img/non-native-spaces-desktop@2x.webp 2x" width="1200" height="400">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.webp 1x, img/non-native-spaces-tablet@2x.webp 2x" width="648" height="400">
@@ -85,7 +85,7 @@
             </button>
           </div>
         </li>
-        <li class="catalog-photo photo-posts__item">
+        <li class="catalog-photo photo-posts__item photo-posts-line">
           <picture class="photo-posts__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/plants-desktop.webp 1x, img/plants-desktop@2x.webp 2x" width="400" height="267">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/plants-tablet.webp 1x, img/plants-tablet@2x.webp 2x" width="324" height="267">
@@ -107,7 +107,7 @@
             </button>
           </div>
         </li>
-        <li class="catalog-photo photo-posts__item">
+        <li class="catalog-photo photo-posts__item photo-posts-line">
           <picture class="photo-posts__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-and-forest-desktop.webp 1x, img/road-and-forest-desktop@2x.webp 2x" width="400" height="267">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/road-and-forest-tablet.webp 1x, img/road-and-forest-tablet@2x.webp 2x" width="324" height="267">
@@ -129,7 +129,7 @@
             </button>
           </div>
         </li>
-        <li class="catalog-photo photo-posts__item">
+        <li class="catalog-photo photo-posts__item photo-posts-line">
           <picture class="photo-posts__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-catalog-desktop.webp 1x, img/devils-bridge-catalog-desktop@2x.webp 2x" width="400" height="267">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-catalog-tablet.webp 1x, img/devils-bridge-catalog-tablet@2x.webp 2x" width="324" height="267">
@@ -155,7 +155,7 @@
       <section class="video">
         <div class="video__wrapper">
           <h2 class="video__title title">Все еще сомневаетесь?</h2>
-          <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они <br> не подорожали в очередной раз!</p>
         </div>
         <div class="video-presentation">
           <a class="video-presentation__link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=sedona+devil%27s+bridge+death+video&tbm=vid&sxsrf=APwXEddtvc-43upLrEyBlFGkCLQaOiqMbQ:1682457947055&source=lnms&sa=X&ved=2ahUKEwjzjaKi_MX-AhWQT6QEHZ1iAGEQ_AUoAnoECAEQBA&biw=1512&bih=866&dpr=2#fpstate=ive&vld=cid:347cadb9,vid:YEGajUnX44c">
@@ -167,7 +167,6 @@
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="648" height="500">
               <img class="video-presentation__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео тура по Седоне." loading="lazy">
             </picture>
-            <!-- Скрыта атрибутом hidden, так как js пока нет -->
           <span class="page__hidden">Включить видео</span>
           <div class="video-presentation__play">
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="48" height="54" fill="none" viewBox="0 0 48 54"><path fill="#fff" fill-opacity=".7" d="M48 27 0 54V0l48 27Z"/></svg>
@@ -188,7 +187,7 @@
               <svg class="social-path" width="24" height="24">
                 <use href="img/stack.svg#vk"></use>
               </svg>
-              <span class="visually-hidden">ВКонтакте.</span>
+              <span class="page__hidden">ВКонтакте.</span>
             </a>
           </li>
           <li class="social__item">
@@ -196,7 +195,7 @@
               <svg class="social-path" width="22" height="18">
                 <use href="img/stack.svg#telegram"></use>
               </svg>
-              <span class="visually-hidden">Телеграм.</span>
+              <span class="page__hidden">Телеграм.</span>
             </a>
           </li>
           <li class="social__item">
@@ -204,7 +203,7 @@
               <svg class="social-path" width="20" height="14">
                 <use href="img/stack.svg#youtube"></use>
               </svg>
-              <span class="visually-hidden">Ютуб.</span>
+              <span class="page__hidden">Ютуб.</span>
             </a>
           </li>
         </ul>

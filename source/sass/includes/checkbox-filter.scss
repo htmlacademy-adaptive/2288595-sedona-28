@@ -36,7 +36,6 @@
   list-style: none;
   margin: 0;
   margin-top: 28px;
-  padding: 0;
 
   @media (width < vars.$tablet-width) {
     padding: 0 var(--side-offset, 20px);
@@ -45,7 +44,8 @@
   @media (min-width: vars.$tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    margin-top: 13px;
+    padding: 0 39px 1px 76px;
   }
 
   @media (min-width: vars.$desktop-width) {
@@ -54,18 +54,7 @@
   }
 }
 
-// .checkbox-filter__title {
-//   text-align: center;
-
-//   @media (width < vars.$tablet-width) {
-//     float: left;
-//     width: 100%;
-//     margin-top: 17px;
-//     margin-bottom: 24px;
-//   }
-
-//   @media (min-width: vars.$tablet-width) {
-//     width: 400px;
-//     padding: 0;
-//   }
-// }
+.checkbox-filter__title {
+  text-align: center;
+  padding: 0 67px;
+}

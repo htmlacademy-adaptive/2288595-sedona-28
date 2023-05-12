@@ -12,6 +12,10 @@
   background-image: url("../img/map-mobile.jpg");
   background-color: vars.$background-image-color;
 
+  @media (0 < width < vars.$tablet-width) {
+    margin-bottom: 13px;
+  }
+
   @media (resolution >= 2dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
   }

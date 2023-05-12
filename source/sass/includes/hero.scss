@@ -46,8 +46,9 @@
     clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
 
     @media (width >= vars.$tablet-width) {
-      clip-path: polygon(0 100%, 0 15%, 10% 44%, 10% 0, 50% 97%, 90% 0, 90% 44%, 100% 15%, 100% 100%);
+      clip-path: polygon(4% 0, 50% 100%, 96% 0, 96% 32%, 100% 30%, 100% 100%, 0 100%, 0 30%, 4% 39%);
       max-width: 1200px;
+      height: 59px;
     }
   }
 }
@@ -56,4 +57,8 @@
   object-fit: cover;
   width: 100%;
   margin-top: 10px;
+
+  @media (width >= vars.$tablet-width) {
+    margin-top: -10px;
+  }
 }

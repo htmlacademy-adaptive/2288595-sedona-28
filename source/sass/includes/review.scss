@@ -13,7 +13,11 @@
 }
 
 .review__description {
-  margin-top: 35px;
+  margin-top: 21px;
+
+  @media (min-width: vars.$desktop-width) {
+    margin-top: 31px;
+  }
 }
 
 .review__wrapper {
@@ -23,5 +27,9 @@
 
   @media (min-width: vars.$tablet-width) {
     padding: 64px 106px 108px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding: 115px 106px 68px;
   }
 }

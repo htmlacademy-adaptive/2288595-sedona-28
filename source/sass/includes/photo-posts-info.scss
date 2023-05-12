@@ -1,6 +1,10 @@
 @use "../common/variables.scss" as vars;
 
 .photo-posts__info {
+  @media (width < vars.$tablet-width) {
+    padding: 0 20px;
+  }
+
   @media (min-width: vars.$tablet-width) {
     padding: 22px 20px 16px;
     display: flex;
@@ -13,8 +17,14 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    padding: 20px;
+    padding: 18px 19px 19px 26px;
     inset: auto 0 0;
     background-color: hsl(0deg 0% 0% / 30%);
+  }
+
+  &--panorama {
+    @media (min-width: vars.$desktop-width) {
+      padding: 20px 20px 17px 21px;
+    }
   }
 }

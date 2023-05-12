@@ -8,21 +8,20 @@
   color: #000000;
   background-color: #f2f2f2;
   border: 4px solid transparent;
+
+  &:hover {
+    background-color: #e5e5e5;
 }
 
-.fieldset:hover,
-.fieldset:focus {
-  background-color: #e5e5e5;
+  &:active {
+    border: 4px solid #e5e5e5;
+    outline: none;
+    background-color: #ffffff;
 }
 
-.fieldset:active {
-  border: 4px solid #e5e5e5;
-  outline: none;
-  background-color: #ffffff;
+  &:focus {
+    border-color: #e5e5e5;
+    background-color: #ffffff;
+    outline: none;
+  }
 }
-
-// .fieldset:not(:placeholder-shown) {
-//   background-color: #f2f2f2;
-//   color: #000000;
-//   opacity: 0.3;
-// }

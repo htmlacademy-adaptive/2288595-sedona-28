@@ -28,6 +28,10 @@
   margin-bottom: 11px;
   text-transform: uppercase;
 
+  @media (min-width: vars.$tablet-width) {
+    margin-bottom: 13px;
+  }
+
   &--white {
     color: #ffffff;
   }
@@ -37,16 +41,26 @@
   text-transform: uppercase;
   margin: 0;
 
+    &--last {
+      @media (0 < width < vars.$tablet-width) {
+        padding-bottom: 7px;;
+      }
+    }
+
   &::before {
     counter-increment: motive;
     content: "— №" counter(motive) " —";
     display: block;
     margin-bottom: 17px;
+
+    @media (min-width: vars.$tablet-width) {
+      margin-bottom: 22px;
+    }
   }
 
-  &--white {
-    color: #ffffff;
-  }
+    &--white {
+      color: #ffffff;
+    }
 }
 
 .advantages__subitem {
@@ -54,36 +68,81 @@
   list-style: none;
   background-repeat: no-repeat;
   text-align: center;
-  background-position: center 60px;
-  background-size: 77px 72px;
-  padding: 158px 33px 61px;
+  padding: 154px 40px 65px;
   min-height: 92px;
 
   @media (0 < width < vars.$tablet-width) {
-    background-position: 0 23px;
-    background-size: 39px 36px;
     text-align: left;
     min-height: 92px;
-    padding: 31px 0 2px 45px;
+    padding: 30px 0 4px 47px;
   }
 
+  @media (min-width: vars.$desktop-width) {
+    padding: 168px 34px 68px 33px;
+  }
 
   &--house {
     background-image: url("../img/stack.svg#house");
+
+    @media (0 < width < vars.$tablet-width) {
+      background-size: 39px 36px;
+      background-position: 0 25px;
+    }
+
+    @media (min-width: vars.$tablet-width) {
+      background-size: 77px 72px;
+      background-position: 88px 60px;
+    }
+
+    @media (min-width: vars.$desktop-width) {
+      background-size: 77px 72px;
+      background-position: center 70px;
+    }
   }
+
 
   &--gift {
     background-image: url("../img/stack.svg#gift");
+
+    @media (0 < width < vars.$tablet-width) {
+      background-size: 32px 38px;
+      background-position: 4px 22px;
+    }
+
+    @media (min-width: vars.$tablet-width) {
+      background-size: 66px 75px;
+      background-position: 97px 64px;
+    }
+
+    @media (min-width: vars.$desktop-width) {
+      background-size: 77px 75px;
+      background-position: center 70px;
+    }
   }
 
   &--food {
     background-image: url("../img/stack.svg#burger");
+
+    @media (0 < width < vars.$tablet-width) {
+      background-size: 40px 35px;
+      background-position: 0 25px;
+    }
+
+    @media (min-width: vars.$tablet-width) {
+      background-size: 80px 68px;
+      background-position: 87px 61px;
+    }
+
+    @media (min-width: vars.$desktop-width) {
+      background-size: 80px 68px;
+      background-position: center 72px;
+    }
   }
 }
 
 .advantages__subitem:last-child {
   @media (0 < width < vars.$tablet-width) {
-    padding-bottom: 46px;
+    padding-bottom: 45px;
   }
 }
 
@@ -94,7 +153,7 @@
   padding: 0;
 
   @media (0 < width < vars.$tablet-width) {
-    padding: 0 var(--side-offset, 20px);
+    padding: 0 18px;
   }
 
   @media (min-width: vars.$tablet-width) {
@@ -134,7 +193,7 @@
   min-height: 256px;
 
   @media (min-width: vars.$tablet-width) {
-    padding: 52px 33px 31px;
+    padding: 53px 33px 31px;
   }
 
   @media (min-width: vars.$desktop-width) {
@@ -143,19 +202,31 @@
 
   @media (0 < width < vars.$tablet-width) {
     min-height: 211px;
-    padding: 55px 18px 41px;
+    padding: 54px 18px 41px;
+  }
 
     &--grey {
       padding: 23px 37px;
       min-height: 166px;
+
+      @media (min-width: vars.$tablet-width) {
+        padding: 41px 28px 44px 29px;
+      }
+
+      @media (min-width: vars.$desktop-width) {
+        padding: 53px 28px 53px 29px;
+      }
     }
 
     &--blue {
       padding: 37px 18px 0;
       min-height: 191px;
+
+      @media (min-width: vars.$tablet-width) {
+        padding: 52px 40px 0;
+      }
     }
   }
-}
 
 .advantages__image {
   background-color: vars.$background-image-color;
@@ -174,11 +245,11 @@
   text-align: center;
 
   @media (min-width: vars.$tablet-width) {
-    padding: 47px 124px;
+    padding: 47px 121px;
   }
 
   @media (min-width: vars.$desktop-width) {
-    padding: 59px 359px 45px;
+    padding: 59px 0 35px;
   }
 
   &::after {
@@ -199,7 +270,8 @@
   margin-top: 35px;
 
   @media (min-width: vars.$tablet-width) {
-    margin-top: 39px;
+    margin-top: 29px;
+    margin-bottom: 10px;
   }
 }
 
@@ -208,6 +280,16 @@
 
   @media (min-width: vars.$tablet-width) {
     padding-bottom: 23px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding-bottom: 26px;
+  }
+
+  &--food {
+    @media (min-width: vars.$desktop-width) {
+      padding-bottom: 22px;
+    }
   }
 }
 
@@ -233,5 +315,16 @@
       display: grid;
       grid-template-columns: 2fr 1fr;
     }
+  }
+}
+
+.advantages-line {
+  @media (width < vars.$tablet-width) {
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: #d6d6d6;
+    width: 284px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

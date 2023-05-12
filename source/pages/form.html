@@ -59,7 +59,7 @@
       <section class="review">
         <div class="review__wrapper">
           <h2 class="review__title title">Оставьте свой отзыв</h2>
-          <p class="review__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="review__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них, <br> а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -67,7 +67,7 @@
           <fieldset class="fieldset-form fieldset-properties-line fieldset-properties-line--grid">
             <legend class="fieldset-form__title title fieldset-properties">Представьтесь:</legend>
             <ul class="fieldset-form__list">
-              <li class="fieldset-form__item description fieldset-top">
+              <li class="fieldset-form__item description fieldset-top fieldset-top--first">
                 <label class="fieldset-form__label" for="your-name">Имя<span aria-hidden="true">*</span>:</label>
                 <input class="fieldset-form__input fieldset" name="your-name" id="your-name" placeholder="Укажите имя" value="Пётр" type="text" required>
               </li>
@@ -82,9 +82,9 @@
             </ul>
           </fieldset>
           <fieldset class="fieldset-form fieldset-properties-line fieldset-properties-line--grid">
-            <legend class="fieldset-form__title title fieldset-properties">Контактная информация:</legend>
+            <legend class="fieldset-form__title title fieldset-properties fieldset-properties--contact">Контактная информация:</legend>
             <ul class="fieldset-form__list">
-              <li class="fieldset-form__item description fieldset-top">
+              <li class="fieldset-form__item description fieldset-top fieldset-top--first">
                 <label class="fieldset-form__label" for="your-phone">Контактный телефон<span aria-hidden="true">*</span>:</label>
                 <div class="input">
                   <input class="fieldset-form__input fieldset" name="your-phone" id="your-phone" placeholder="Введите телефон" type="tel" required>
@@ -113,14 +113,14 @@
         <fieldset class="radio-filter fieldset-properties-line">
           <legend class="radio-filter__title title fieldset-properties">Ваше общее впечатление:</legend>
           <ul class="radio-filter__list">
-            <li class="radio-filter__item fieldset-top">
+            <li class="radio-filter__item fieldset-top fieldset-top--first">
               <label class="control">
                 <input class="page__hidden control__input control__input--radio" type="radio" name="impression" value="positive" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее положительное</span>
               </label>
             </li>
-            <li class="radio-filter__item fieldset-top">
+            <li class="radio-filter__item fieldset-top fieldset-top--first">
               <label class="control">
                 <input class="page__hidden control__input control__input--radio" type="radio" name="impression" value="negative">
                 <span class="control__mark"></span>
@@ -136,8 +136,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="checkbox-filter fieldset-properties-line">
-          <legend class="checkbox-filter__title title fieldset-properties">Посещенные достопримечательности:</legend>
+        <fieldset class="checkbox-filter fieldset-properties-line fieldset-properties-line--check">
+          <legend class="checkbox-filter__title title fieldset-properties">Посещенные <br> достопримечательности:</legend>
           <ul class="checkbox-filter__list">
             <li class="checkbox-filter__item fieldset-top">
               <label class="control">
@@ -175,7 +175,7 @@
             <li class="fieldset-form__item fieldset-top">
               <label for="your-emotions">
               </label>
-              <textarea class="fieldset-form__input fieldset" name="your-emotions" id="your-emotions" placeholder="Опишите подробно все свои восторги" required rows="6" aria-labelledby="emotions-title"></textarea>
+              <textarea class="fieldset-form__input fieldset" name="your-emotions" id="your-emotions" placeholder="Опишите подробно все свои восторги" required rows="5" aria-labelledby="emotions-title"></textarea>
             </li>
           </ul>
         </fieldset>
@@ -201,7 +201,7 @@
               <svg class="social-path" width="24" height="24">
                 <use href="img/stack.svg#vk"></use>
               </svg>
-              <span class="visually-hidden">ВКонтакте.</span>
+              <span class="page__hidden">ВКонтакте.</span>
             </a>
           </li>
           <li class="social__item">
@@ -209,7 +209,7 @@
               <svg class="social-path" width="22" height="18">
                 <use href="img/stack.svg#telegram"></use>
               </svg>
-              <span class="visually-hidden">Телеграм.</span>
+              <span class="page__hidden">Телеграм.</span>
             </a>
           </li>
           <li class="social__item">
@@ -217,7 +217,7 @@
               <svg class="social-path" width="20" height="14">
                 <use href="img/stack.svg#youtube"></use>
               </svg>
-              <span class="visually-hidden">Ютуб.</span>
+              <span class="page__hidden">Ютуб.</span>
             </a>
           </li>
         </ul>

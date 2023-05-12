@@ -11,7 +11,7 @@
 .development__link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 13px;
   text-decoration: none;
 }
 
@@ -35,4 +35,8 @@
 
 .development__link:active .development__text {
   color: #b3b3b3;
+}
+
+.development {
+  max-width: 300px;
 }
