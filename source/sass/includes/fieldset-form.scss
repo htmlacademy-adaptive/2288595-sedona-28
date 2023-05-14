@@ -37,7 +37,11 @@
   &--textarea {
     @media (min-width: vars.$tablet-width) {
       margin-bottom: 10px;
+      padding: 0 67px;
+    }
 
+    @media (min-width: vars.$desktop-width) {
+      padding: 0 79px;
     }
   }
 }
