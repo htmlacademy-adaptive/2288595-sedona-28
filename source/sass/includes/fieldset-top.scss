@@ -6,4 +6,10 @@
   &--first {
     margin-top: 27px;
   }
+
+  &--last {
+    @media (min-width: vars.$desktop-width) {
+    margin-left: -17px;
+    }
+  }
 }

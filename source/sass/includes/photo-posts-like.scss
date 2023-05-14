@@ -10,16 +10,17 @@
   height: 26px;
   margin-top: 6px;
 
+  @media (width < vars.$tablet-width) {
+    margin-bottom: 26px;
+    margin-top: 1px;
+  }
+
   &:hover {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
-  }
-
-  @media (width < vars.$tablet-width) {
-    margin-bottom: 21px;
   }
 }
 

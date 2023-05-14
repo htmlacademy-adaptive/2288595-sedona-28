@@ -99,10 +99,6 @@
   line-height: 26px;
   font-weight: 700;
 
-  &--page {
-    color: #766357;
-  }
-
   @media (min-width: vars.$tablet-width) {
     margin: 0  auto;
     width: fit-content;
@@ -110,19 +106,21 @@
     padding-right: 0;
     font-size: 14px;
     line-height: 21px;
+
+    &:hover {
+      color: vars.$base-color;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+
+    &--page {
+      color: #766357;
+    }
   }
 }
-
-  .main-nav__link:hover {
-    color: vars.$base-color;
-  }
-
-  .main-nav__link:active {
-    color: #000000;
-    opacity: 0.3;
-  }
-
-
 
 .main-nav__item {
   @media (0 < width < vars.$tablet-width) {

@@ -9,6 +9,12 @@
     padding: 0 var(--side-offset, 20px);
     margin-top: 71px;
   }
+
+  &--textarea {
+    @media (min-width: vars.$desktop-width) {
+      padding: 0 95px;
+    }
+  }
 }
 
 .fieldset-form {
@@ -30,14 +36,22 @@
 
   &--textarea {
     @media (min-width: vars.$tablet-width) {
-      width: 400px;
       margin-bottom: 10px;
+
     }
   }
 }
 
 .fieldset-form__input {
   padding: 12px 0 12px 12px;
+
+  &--textarea {
+    height: 150px;
+
+    @media (min-width: vars.$tablet-width) {
+      height: 160px;
+    }
+  }
 }
 
 
@@ -90,4 +104,8 @@
 
 .fieldset-form__label {
   margin-left: 16px;
+}
+
+textarea {
+  resize: none;
 }

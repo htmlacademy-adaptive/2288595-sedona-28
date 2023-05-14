@@ -113,14 +113,14 @@
         <fieldset class="radio-filter fieldset-properties-line">
           <legend class="radio-filter__title title fieldset-properties">Ваше общее впечатление:</legend>
           <ul class="radio-filter__list">
-            <li class="radio-filter__item fieldset-top fieldset-top--first">
+            <li class="radio-filter__item fieldset-top">
               <label class="control">
                 <input class="page__hidden control__input control__input--radio" type="radio" name="impression" value="positive" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее положительное</span>
               </label>
             </li>
-            <li class="radio-filter__item fieldset-top fieldset-top--first">
+            <li class="radio-filter__item fieldset-top">
               <label class="control">
                 <input class="page__hidden control__input control__input--radio" type="radio" name="impression" value="negative">
                 <span class="control__mark"></span>
@@ -160,7 +160,7 @@
                 <span class="control__label">Слайд-парк</span>
               </label>
             </li>
-            <li class="checkbox-filter__item fieldset-top">
+            <li class="checkbox-filter__item fieldset-top fieldset-top--last">
               <label class="control">
                 <input class="page__hidden control__input control__input--check" type="checkbox" name="red-rocks">
                 <span class="control__mark"></span>
@@ -170,12 +170,14 @@
           </ul>
         </fieldset>
         <fieldset class="fieldset-form fieldset-form--textarea fieldset-properties-line">
-          <legend class="fieldset-form__title fieldset-form__title--textarea title fieldset-properties" id="emotions-title">Опишите свои эмоции:</legend>
-          <ul class="fieldset-form__list">
+          <legend class="fieldset-form__title fieldset-form__title--textarea title fieldset-properties">
+            <label for="your-emotions">Опишите свои эмоции:</label>
+          </legend>
+          <ul class="fieldset-form__list fieldset-form__list--textarea">
             <li class="fieldset-form__item fieldset-top">
               <label for="your-emotions">
               </label>
-              <textarea class="fieldset-form__input fieldset" name="your-emotions" id="your-emotions" placeholder="Опишите подробно все свои восторги" required rows="5" aria-labelledby="emotions-title"></textarea>
+              <textarea class="fieldset-form__input fieldset-form__input--textarea fieldset" name="your-emotions" id="your-emotions" placeholder="Опишите подробно все свои восторги" required></textarea>
             </li>
           </ul>
         </fieldset>
@@ -233,20 +235,20 @@
     </footer>
   <div class="modal-container modal-container-close-error">
     <div class="modal-error modal-search">
-      <section class="modal-content">
-        <h2 class="modal-error-title modal-title title">Что-то пошло не так!</h2>
-        <p class="modal-error-text modal-text description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-error-button button" type="submit">ок</button>
+      <section class="modal-content-close">
+        <h2 class="modal-title-error modal-title-error--br title">Что-то пошло <br> не так!</h2>
+        <p class="modal-text-error description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-button-error button" type="submit">ок</button>
       </section>
     </div>
   </div>
   <div class="modal-container modal-container-close-feedback">
     <div class="modal-feedback modal-search">
-      <section class="modal-content">
-        <h2 class="modal-feedback-title modal-title title">Ваш отзыв отправлен!</h2>
-        <p class="modal-feedback-text modal-text description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <section class="modal-content-feedback">
+        <h2 class="modal-title-feedback title">Ваш отзыв отправлен!</h2>
+        <p class="modal-text-feedback modal-text-feedback--br description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
         <div class="feedback-button">
-          <button class="modal-feedback-button button" type="submit">Закрыть окно</button>
+          <button class="modal-button-feedback button" type="submit">Закрыть окно</button>
         </div>
       </section>
     </div>

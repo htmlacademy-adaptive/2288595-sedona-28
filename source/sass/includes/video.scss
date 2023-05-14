@@ -14,6 +14,10 @@
   }
 
   @media (min-width: vars.$tablet-width) {
+    padding: 53px 109px 89px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
     padding: 60px 102px 87px;
   }
 }
@@ -34,7 +38,7 @@
   margin-top: 26px;
 
   @media (min-width: vars.$tablet-width) {
-    margin-top: 28px;
+    margin-top: 35px;
   }
 
   @media (min-width: vars.$desktop-width) {
@@ -81,4 +85,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.video-presentation__image {
+  background-color: vars.$base-color;
 }

@@ -10,6 +10,7 @@
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   @media (resolution >= 2dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -40,15 +41,35 @@
     position: absolute;
     height: 27px;
     background-color: #ffffff;
-    width: 100%;
+    width: 101%;
     bottom: -1px;
-    left: 0;
+    left: -0.5%;
     clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
 
     @media (width >= vars.$tablet-width) {
-      clip-path: polygon(4% 0, 50% 100%, 96% 0, 96% 32%, 100% 30%, 100% 100%, 0 100%, 0 30%, 4% 39%);
-      max-width: 1200px;
       height: 59px;
+
+      $design-width: 1200;
+      $design-height: 57;
+
+      clip-path: polygon(4% 0, 50% 100%, 96% 0, 96% 32%, 100% 30%, 100% 100%, 0 100%, 0 30%, 4% 39%);
+    }
+
+    @media (width >= vars.$desktop-width) {
+      $design-width: 1200;
+      $design-height: 57;
+
+      clip-path: polygon(
+        0 100%,
+        0 0,
+        calc(249.6 / $design-width * 100%) calc(23.7 / $design-height * 100%),
+        calc(249.6 / $design-width * 100%) 0,
+        50% 100%,
+        calc(($design-width - 249.6) / $design-width * 100%) 0,
+        calc(($design-width - 249.6) / $design-width * 100%) calc(23.7 / $design-height * 100%),
+        100% 0,
+        100% 100%
+      );
     }
   }
 }

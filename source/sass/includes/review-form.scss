@@ -2,7 +2,11 @@
 
 .review-form__button {
   font-size: 21px;
-  padding: 16px 49px;
+  padding: 16px 49px 16px 48px;
+
+  @media (0 < width < vars.$tablet-width) {
+    margin-top: 38px;
+  }
 
   @media (min-width: vars.$tablet-width) {
     width: 324px;
@@ -51,15 +55,13 @@
 
   @media (min-width: vars.$tablet-width) {
     padding: 0 var(--side-offset, 60px);
-  }
-
-  @media (min-width: vars.$desktop-width) {
-    padding: 0 var(--side-offset, 120px);
-  }
-
-  @media (width >= vars.$tablet-width) {
     display: flex;
     margin-top: 47px;
     align-items: baseline;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding: 0 216px;
+    margin-top: 49px;
   }
 }

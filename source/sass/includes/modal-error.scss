@@ -2,27 +2,73 @@
 
 .modal-error {
   width: 320px;
+  height: 280px;
   position: relative;
   margin: auto;
   padding: 45px 42px 35px 41px;
   box-shadow: 0 25px 50px rgb(0 0 0 / 15%);
   background-color: #ffffff;
+  text-align: center;
 
   @media (min-width: vars.$tablet-width) {
     width: 400px;
-    padding: 38px 47px 49px 46px;
+    height: 347px;
+    padding: 35px 47px 49px 46px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding: 46px 47px 49px 46px;
   }
 }
 
-.modal-error-button {
+.modal-button-error {
   padding: 16px 64px;
   width: 180px;
+  font-size: 18px;
+  height: 58px;
 
   @media (min-width: vars.$tablet-width) {
     width: 272px;
+    font-size: 21px;
   }
 }
 
 .modal-container-close-error {
   display: none;
+}
+
+.modal-text-error {
+  margin-bottom: 28px;
+
+  @media (min-width: vars.$tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.modal-content-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: vars.$tablet-width) {
+    margin-top: 7px;
+  }
+}
+
+.modal-title-error {
+  margin-bottom: 26px;
+
+  @media (min-width: vars.$tablet-width) {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    margin-bottom: 26px;
+  }
 }

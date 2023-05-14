@@ -34,19 +34,25 @@
   @media (min-width: vars.$tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-right: 21px
+    padding-right: 21px;
+    padding-top: 12px;
   }
 
   @media (min-width: vars.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-right: 0;
+    gap: 19px;
+    padding-left: 56px;
   }
 }
 
 .radio-filter__title {
   position: relative;
-  padding: 0 67px;
+
+  @media (min-width: vars.$tablet-width) {
+    padding: 0 67px;
+  }
 
   @media (min-width: vars.$desktop-width) {
     margin-bottom: 18px;

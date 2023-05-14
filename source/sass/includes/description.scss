@@ -7,14 +7,4 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
-
-  br {
-    display: none;
-  }
-
-  @media (min-width: vars.$tablet-width) {
-    br {
-      display: initial;
-    }
-  }
 }
