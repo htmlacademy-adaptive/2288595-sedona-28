@@ -1,16 +1,27 @@
 @use "../common/variables.scss" as vars;
 
 .photo-posts__item {
-  @media (width < vars.$tablet-width) {
+  @media (0 < width < vars.$tablet-width) {
     padding-top: 24px;
     border-bottom: 1px solid #e5e5e5;
   }
 
   &--panorama {
     grid-column: 1/-1;
+  }
+}
 
-    @media (width < vars.$tablet-width) {
-      border-top: 1px solid #e5e5e5;
-    }
+.photo-posts__item:last-child {
+  @media (0 < width < vars.$tablet-width) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.photo-posts-line {
+  @media (width < vars.$tablet-width) {
+    margin-top: 28px;
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: #e5e5e5;
   }
 }

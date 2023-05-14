@@ -1,31 +1,26 @@
 @use "../common/variables.scss" as vars;
 
-// .radio-filter {
-//   padding: 0;
-//   border: none;
+.radio-filter {
+  margin-top: -5px;
 
-//   @media (width < vars.$tablet-width) {
-//     border-width: 1px 0 0;
-//     border-style: solid;
-//     border-color: #e5e5e5;
-//   }
+  @media (min-width: vars.$tablet-width) {
+    margin-top: 25px;
+  }
 
-//   @media (min-width: vars.$tablet-width) {
-//     border-top: 1px solid #e5e5e5;
-//     margin: 63px 60px 0 60px;
-//   }
-
-//   @media (min-width: vars.$desktop-width) {
-//     border-top: 1px solid #e5e5e5;
-//     margin: 71px 120px 0 120px;
-//   }
-// }
+  @media (min-width: vars.$desktop-width) {
+    margin-top: 34px;
+  }
+}
 
 .radio-filter__item {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: vars.$tablet-width) {
+    width: 280px;
+  }
 }
 
 .radio-filter__list {
@@ -39,26 +34,27 @@
   @media (min-width: vars.$tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    padding-right: 21px;
+    padding-top: 12px;
   }
 
   @media (min-width: vars.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 0;
+    gap: 19px;
+    padding-left: 56px;
   }
 }
 
 .radio-filter__title {
   position: relative;
 
-  // @media (width < vars.$tablet-width) {
-  //   float: left;
-  //   width: 100%;
-  //   margin-top: 17px;
-  // }
+  @media (min-width: vars.$tablet-width) {
+    padding: 0 67px;
+  }
 
-  // @media (min-width: vars.$tablet-width) {
-  //   padding-left: 67px;
-  //   padding-right: 67px;
-  // }
+  @media (min-width: vars.$desktop-width) {
+    margin-bottom: 18px;
+  }
 }

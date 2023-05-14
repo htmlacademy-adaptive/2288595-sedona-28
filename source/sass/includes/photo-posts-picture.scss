@@ -1,3 +1,5 @@
+@use "../common/variables.scss" as vars;
+
 .photo-posts__picture {
   display: grid;
   justify-items: center;

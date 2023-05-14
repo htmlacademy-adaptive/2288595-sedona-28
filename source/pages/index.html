@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Седона</title>
+    <title>Прекрасный город Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="img/hero-mobile@2x.jpg" as="image">
   </head>
   <body class="page__body">
     <header class="page__header">
@@ -21,7 +24,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--page">
+            <a class="main-nav__link main-nav__link--page" href="#">
               Главная
             </a>
           </li>
@@ -54,15 +57,15 @@
       <section class="advantages">
         <h2 class="page__hidden">Преимущества</h2>
         <div class="advantages__wrapper">
-          <strong class="advantages__intro title">Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
+          <strong class="advantages__intro title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</strong>
           <p class="advantages__text description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
           <ol class="advantages__list">
             <li class="advantages__panorama">
               <div class="advantages__picture advantages__picture--picture-right">
                 <div class="advantages__item">
-                  <h3 class="advantages__title advantages__title--white title">Настоящий городок</h3>
-                  <p class="advantages__description advantages__description--white description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  <h3 class="advantages__title advantages__title--white title">Настоящий <br> городок</h3>
+                  <p class="advantages__description advantages__description--white description advantages__description--br">Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
                 </div>
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/city-cafe-desktop.webp 1x, img/city-cafe-desktop@2x.webp 2x" width="800" height="256">
@@ -79,12 +82,12 @@
                   <p class="advantages__subdescription description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="advantages__subitem advantages__subitem--food">
-                  <h3 class="advantages__subtitle title">Еда</h3>
+                  <h3 class="advantages__subtitle advantages__subtitle--food title">Еда</h3>
                   <p class="advantages__subdescription description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="advantages__subitem advantages__subitem--gift">
                   <h3 class="advantages__subtitle title">Сувениры</h3>
-                  <p class="advantages__subdescription description">Не только китайского, но и местного производства!</p>
+                  <p class="advantages__subdescription advantages__subdescription--br description">Не только китайского, <br> но и местного производства!</p>
                 </li>
               </ul>
             </li>
@@ -96,32 +99,32 @@
                   <source type="image/webp" srcset="img/devils-bridge-mobile.webp 1x, img/devils-bridge-mobile@2x.webp 2x" width="320" height="260">
                   <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x" width="800" height="256">
                   <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x" width="512" height="256">
-                  <img class="advantages__image" src="img/devils-bridge-mobile.jpg" srcset="img/devils-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола в Седоне..">
+                  <img class="advantages__image" src="img/devils-bridge-mobile.jpg" srcset="img/devils-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола в Седоне." loading="lazy">
                 </picture>
                 <div class="advantages__item advantages__item--blue">
-                  <h3 class="advantages__title advantages__title--white title">Там есть мост дьявола</h3>
+                  <h3 class="advantages__title advantages__title--white title">Там есть <br> мост дьявола</h3>
                   <p class="advantages__description advantages__description--white description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
               </div>
             </li>
               <li class="advantages__item advantages__item--grey">
-                <h3 class="advantages__title title">Небольшая площадь</h3>
-                <p class="advantages__description description">Все интересные места находятся очень близко</p>
+                <h3 class="advantages__title title">Небольшая <br> площадь</h3>
+                <p class="advantages__description description advantages__description--br">Все интересные места находятся очень <br> близко</p>
               </li>
-              <li class="advantages__item advantages__item--grey">
-                  <h3 class="advantages__title title">Красивая дорога</h3>
-                  <p class="advantages__description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <li class="advantages__item advantages__item--grey advantages-line">
+                  <h3 class="advantages__title title">Красивая <br> дорога</h3>
+                  <p class="advantages__description description">Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
               </li>
-              <li class="advantages__item advantages__item--grey">
-                  <h3 class="advantages__title title">Мало туристов</h3>
-                  <p class="advantages__description description">Большинство едет в Гранд Каньон и толпится там</p>
+              <li class="advantages__item advantages__item--padding advantages__item--grey advantages-line">
+                  <h3 class="advantages__title title">Мало <br>туристов</h3>
+                  <p class="advantages__description advantages__description--last advantages__description--br description">Большинство едет в Гранд Каньон и <br> толпится там</p>
               </li>
           </ol>
       </section>
       <section class="search-hotel">
         <div class="search-hotel__wrapper">
           <h2 class="search-hotel__title title title--large">Заинтересовались?</h2>
-          <p class="search-hotel__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+          <p class="search-hotel__description description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         </div>
         <button class="search-hotel__button button" type="button">Найти гостиницу</button>
       </section>
@@ -132,7 +135,7 @@
     </main>
     <footer class="page__footer">
         <div class="page__footer-hashtag hashtag">
-          <a class="hashtag-sedona" href="">#visitSEDONA</a>
+          <a class="hashtag-sedona" href="#">#visitSEDONA</a>
         </div>
         <div class="page__footer-social social">
           <h2 class="page__hidden">Социальные сети.</h2>
@@ -142,6 +145,7 @@
                 <svg class="social-path" width="24" height="24">
                   <use href="img/stack.svg#vk"></use>
                 </svg>
+                <span class="page__hidden">ВКонтакте.</span>
               </a>
             </li>
             <li class="social__item">
@@ -149,6 +153,7 @@
                 <svg class="social-path" width="22" height="18">
                   <use href="img/stack.svg#telegram"></use>
                 </svg>
+                <span class="page__hidden">Телеграм.</span>
               </a>
             </li>
             <li class="social__item">
@@ -156,6 +161,7 @@
                 <svg class="social-path" width="20" height="14">
                   <use href="img/stack.svg#youtube"></use>
                 </svg>
+                <span class="page__hidden">Ютуб.</span>
               </a>
             </li>
           </ul>

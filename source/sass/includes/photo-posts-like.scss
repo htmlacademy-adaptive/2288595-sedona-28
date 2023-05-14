@@ -8,9 +8,19 @@
   padding: 0;
   margin: 0;
   height: 26px;
+  margin-top: 6px;
 
   @media (width < vars.$tablet-width) {
-    margin-bottom: 27px;
+    margin-bottom: 26px;
+    margin-top: 1px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -30,4 +40,8 @@
 
 .photo-posts__like .like {
   margin-left: 10px;
+
+  @media (min-width: vars.$tablet-width) {
+    margin-left: 6px;
+  }
 }

@@ -14,12 +14,20 @@
   }
 
   @media (min-width: vars.$tablet-width) {
-    padding: 67px 95px 68px;
+    padding: 59px 95px 89px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding: 99px 95px 89px 89px;
   }
 }
 
 .photo-video__description {
   margin-top: 25px;
+
+  @media (min-width: vars.$tablet-width) {
+    margin-top: 31px;
+  }
 }
 
 .photo-video__title {

@@ -1,30 +1,5 @@
 @use "../common/variables.scss" as vars;
 
-// .checkbox-filter {
-//   padding: 0;
-//   margin-top: 48px;
-//   border: none;
-
-//   @media (width < vars.$tablet-width) {
-//     margin-top: 24px;
-//     border-width: 1px 0 0;
-//     border-style: solid;
-//     border-color: #e5e5e5;
-//   }
-
-//   @media (min-width: vars.$tablet-width) {
-//     border-top: 1px solid #e5e5e5;
-//     margin-left: 60px;
-//     margin-right: 60px;
-//   }
-
-//   @media (min-width: vars.$desktop-width) {
-//     border-top: 1px solid #e5e5e5;
-//     margin-left: 120px;
-//     margin-right: 120px;
-//   }
-// }
-
 .checkbox-filter__item {
   font-size: 18px;
   line-height: 26px;
@@ -36,7 +11,6 @@
   list-style: none;
   margin: 0;
   margin-top: 28px;
-  padding: 0;
 
   @media (width < vars.$tablet-width) {
     padding: 0 var(--side-offset, 20px);
@@ -45,27 +19,23 @@
   @media (min-width: vars.$tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    margin-top: 13px;
+    padding: 0 39px 1px 76px;
   }
 
   @media (min-width: vars.$desktop-width) {
     display: grid;
+    gap: 27px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2px 0 45px 48px;
+    margin-top: 43px;
   }
 }
 
-// .checkbox-filter__title {
-//   text-align: center;
+.checkbox-filter__title {
+  text-align: center;
 
-//   @media (width < vars.$tablet-width) {
-//     float: left;
-//     width: 100%;
-//     margin-top: 17px;
-//     margin-bottom: 24px;
-//   }
-
-//   @media (min-width: vars.$tablet-width) {
-//     width: 400px;
-//     padding: 0;
-//   }
-// }
+  @media (min-width: vars.$tablet-width) {
+    padding: 0 67px;
+  }
+}

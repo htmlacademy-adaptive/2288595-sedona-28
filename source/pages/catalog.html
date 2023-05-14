@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Седона</title>
+    <title>Фотографии и видео прекрасного города Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="img/back-mobile@2x.jpg" as="image">
   </head>
   <body class="page__body">
     <header class="page__header">
@@ -26,7 +29,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--page">
+            <a class="main-nav__link main-nav__link--page" href="#">
               Фото и видео
             </a>
           </li>
@@ -56,18 +59,18 @@
       <section class="photo-video">
         <div class="photo-video__wrapper">
           <h2 class="photo-video__title title">Фото и видео</h2>
-          <p class="photo-video__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="photo-video__description description">Не можете решиться на путешествие из-за курса? <br> Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </section>
       <ul class="photo-posts">
-        <li class="catalog-photo photo-posts__item photo-posts__item--panorama">
+        <li class="catalog-photo photo-posts__item photo-posts__item--panorama photo-posts-line">
           <picture class="photo-posts__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/non-native-spaces-desktop.webp 1x, img/non-native-spaces-desktop@2x.webp 2x" width="1200" height="400">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.webp 1x, img/non-native-spaces-tablet@2x.webp 2x" width="648" height="400">
             <source type="image/webp" srcset="img/non-native-spaces-mobile.webp 1x, img/non-native-spaces-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desktop.jpg 1x, img/non-native-spaces-desktop@2x.jpg 2x" width="1200" height="400">
             <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.jpg 1x, img/non-native-spaces-tablet@2x.jpg 2x" width="648" height="400">
-            <img class="photo-posts__image" src="img/non-native-spaces-mobile.jpg" srcset="img/non-native-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца.">
+            <img class="photo-posts__image" src="img/non-native-spaces-mobile.jpg" srcset="img/non-native-spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в горы в лучах восходящего солнца." loading="lazy">
           </picture>
           <div class="photo-posts__info photo-posts__info--panorama">
             <div class="photo-posts__name">
@@ -82,14 +85,14 @@
             </button>
           </div>
         </li>
-        <li class="catalog-photo photo-posts__item">
+        <li class="catalog-photo photo-posts__item photo-posts-line">
           <picture class="photo-posts__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/plants-desktop.webp 1x, img/plants-desktop@2x.webp 2x" width="400" height="267">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/plants-tablet.webp 1x, img/plants-tablet@2x.webp 2x" width="324" height="267">
             <source type="image/webp" srcset="img/plants-mobile.webp 1x, img/plants-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)" srcset="img/plants-desktop.jpg 1x, img/plants-desktop@2x.jpg 2x" width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/plants-tablet.jpg 1x, img/plants-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-posts__image" src="img/plants-mobile.jpg" srcset="img/plants-mobile@2x.jpg 2x" width="280" height="280" alt="Лесная дорога в Седоне.">
+            <img class="photo-posts__image" src="img/plants-mobile.jpg" srcset="img/plants-mobile@2x.jpg 2x" width="280" height="280" alt="Лесная дорога в Седоне." loading="lazy">
           </picture>
           <div class="photo-posts__info">
             <div class="photo-posts__name">
@@ -104,14 +107,14 @@
             </button>
           </div>
         </li>
-        <li class="catalog-photo photo-posts__item">
+        <li class="catalog-photo photo-posts__item photo-posts-line">
           <picture class="photo-posts__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-and-forest-desktop.webp 1x, img/road-and-forest-desktop@2x.webp 2x" width="400" height="267">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/road-and-forest-tablet.webp 1x, img/road-and-forest-tablet@2x.webp 2x" width="324" height="267">
             <source type="image/webp" srcset="img/road-and-forest-mobile.webp 1x, img/road-and-forest-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)" srcset="img/road-and-forest-desktop.jpg 1x, img/road-and-forest-desktop@2x.jpg 2x" width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/road-and-forest-tablet.jpg 1x, img/road-and-forest-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-posts__image" src="img/road-and-forest-mobile.jpg" srcset="img/road-and-forest-mobile@2x.jpg 2x" width="280" height="280" alt="Растения в Седоне.">
+            <img class="photo-posts__image" src="img/road-and-forest-mobile.jpg" srcset="img/road-and-forest-mobile@2x.jpg 2x" width="280" height="280" alt="Растения в Седоне." loading="lazy">
           </picture>
           <div class="photo-posts__info">
             <div class="photo-posts__name">
@@ -126,14 +129,14 @@
             </button>
           </div>
         </li>
-        <li class="catalog-photo photo-posts__item">
+        <li class="catalog-photo photo-posts__item photo-posts-line">
           <picture class="photo-posts__picture">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-catalog-desktop.webp 1x, img/devils-bridge-catalog-desktop@2x.webp 2x" width="400" height="267">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-catalog-tablet.webp 1x, img/devils-bridge-catalog-tablet@2x.webp 2x" width="324" height="267">
             <source type="image/webp" srcset="img/devils-bridge-catalog-mobile.webp 1x, img/devils-bridge-catalog-mobile@2x.webp 2x" width="280" height="280">
             <source media="(min-width: 1200px)" srcset="img/devils-bridge-catalog-desktop.jpg 1x, img/devils-bridge-catalog-desktop@2x.jpg 2x" width="400" height="267">
             <source media="(min-width: 768px)" srcset="img/devils-bridge-catalog-tablet.jpg 1x, img/devils-bridge-catalog-tablet@2x.jpg 2x" width="324" height="267">
-            <img class="photo-posts__image" src="img/devils-bridge-catalog-mobile.jpg" srcset="img/devils-bridge-catalog-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+            <img class="photo-posts__image" src="img/devils-bridge-catalog-mobile.jpg" srcset="img/devils-bridge-catalog-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола." loading="lazy">
           </picture>
           <div class="photo-posts__info">
             <div class="photo-posts__name">
@@ -152,7 +155,7 @@
       <section class="video">
         <div class="video__wrapper">
           <h2 class="video__title title">Все еще сомневаетесь?</h2>
-          <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="video__description description">Смотрите видеопрезентацию и скорее за билетами, пока они <br> не подорожали в очередной раз!</p>
         </div>
         <div class="video-presentation">
           <a class="video-presentation__link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=sedona+devil%27s+bridge+death+video&tbm=vid&sxsrf=APwXEddtvc-43upLrEyBlFGkCLQaOiqMbQ:1682457947055&source=lnms&sa=X&ved=2ahUKEwjzjaKi_MX-AhWQT6QEHZ1iAGEQ_AUoAnoECAEQBA&biw=1512&bih=866&dpr=2#fpstate=ive&vld=cid:347cadb9,vid:YEGajUnX44c">
@@ -162,9 +165,8 @@
               <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x" width="280" height="177">
               <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800" height="500">
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="648" height="500">
-              <img class="video-presentation__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео тура по Седоне.">
+              <img class="video-presentation__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео тура по Седоне." loading="lazy">
             </picture>
-            <!-- Скрыта атрибутом hidden, так как js пока нет -->
           <span class="page__hidden">Включить видео</span>
           <div class="video-presentation__play">
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="48" height="54" fill="none" viewBox="0 0 48 54"><path fill="#fff" fill-opacity=".7" d="M48 27 0 54V0l48 27Z"/></svg>
@@ -175,7 +177,7 @@
     </main>
     <footer class="page__footer">
       <div class="page__footer-hashtag hashtag">
-        <a class="hashtag-sedona" href="">#visitSEDONA</a>
+        <a class="hashtag-sedona" href="#">#visitSEDONA</a>
       </div>
       <div class="page__footer-social social">
         <h2 class="page__hidden">Социальные сети.</h2>
@@ -185,6 +187,7 @@
               <svg class="social-path" width="24" height="24">
                 <use href="img/stack.svg#vk"></use>
               </svg>
+              <span class="page__hidden">ВКонтакте.</span>
             </a>
           </li>
           <li class="social__item">
@@ -192,6 +195,7 @@
               <svg class="social-path" width="22" height="18">
                 <use href="img/stack.svg#telegram"></use>
               </svg>
+              <span class="page__hidden">Телеграм.</span>
             </a>
           </li>
           <li class="social__item">
@@ -199,6 +203,7 @@
               <svg class="social-path" width="20" height="14">
                 <use href="img/stack.svg#youtube"></use>
               </svg>
+              <span class="page__hidden">Ютуб.</span>
             </a>
           </li>
         </ul>
@@ -211,7 +216,7 @@
           </svg>
         </a>
       </small>
-  </footer>
+    </footer>
   <script src="js/burger-navigation.js"></script>
   </body>
 </html>
