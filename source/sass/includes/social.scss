@@ -18,6 +18,10 @@
   height: 48px;
 }
 
-.social-path {
+.social__path {
   fill: #ffffff;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

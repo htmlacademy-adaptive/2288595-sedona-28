@@ -15,10 +15,7 @@
   background-color: #e6e6e6;
 }
 
-.message-fill {
-  fill:#010101;
-}
-
-.phone-fill {
-  fill:#010101;
+input::placeholder {
+  color: #000000;
+  opacity: 0.3;
 }

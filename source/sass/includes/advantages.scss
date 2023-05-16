@@ -47,6 +47,18 @@
       }
     }
 
+    &--br {
+      br {
+        display: none;
+      }
+
+      @media (min-width: vars.$desktop-width) {
+        br {
+          display: initial;
+        }
+      }
+    }
+
   &::before {
     counter-increment: motive;
     content: "— №" counter(motive) " —";
@@ -360,5 +372,19 @@
     width: 284px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.advantages__subdescription {
+  &--br {
+    br {
+      display: none;
+    }
+
+    @media (min-width: vars.$desktop-width) {
+      br {
+        display: initial;
+      }
+    }
   }
 }

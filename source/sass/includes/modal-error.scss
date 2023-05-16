@@ -2,7 +2,7 @@
 
 .modal-error {
   width: 320px;
-  height: 280px;
+  min-height: 280px;
   position: relative;
   margin: auto;
   padding: 45px 42px 35px 41px;
@@ -12,7 +12,7 @@
 
   @media (min-width: vars.$tablet-width) {
     width: 400px;
-    height: 347px;
+    min-height: 347px;
     padding: 35px 47px 49px 46px;
   }
 
