@@ -10,3 +10,17 @@
   background-color: hsl(0deg 0% 0% / 30%);
   z-index: 12;
 }
+
+.modal-title-error {
+  &--br {
+    br {
+      display: none;
+    }
+
+    @media (min-width: vars.$tablet-width) {
+      br {
+        display: initial;
+      }
+    }
+  }
+}

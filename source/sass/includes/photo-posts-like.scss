@@ -1,7 +1,7 @@
 @use "../common/variables.scss" as vars;
 
 .photo-posts__like {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   background-color: transparent;
   border: transparent;
   cursor: pointer;
@@ -24,7 +24,7 @@
   }
 }
 
-.like-fill {
+.photo-posts__like-fill {
   fill: #000000;
   opacity: 0.3;
 
@@ -32,10 +32,6 @@
     fill: #ffffff;
     opacity: 1;
   }
-}
-
-.like {
-  margin-left: 4px;
 }
 
 .photo-posts__like .like {

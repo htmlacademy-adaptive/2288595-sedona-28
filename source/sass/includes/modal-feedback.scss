@@ -2,7 +2,7 @@
 
 .modal-feedback {
   width: 320px;
-  height: 323px;
+  min-height: 323px;
   position: relative;
   margin: auto;
   padding: 36px 39px 20px 37px;
@@ -12,7 +12,11 @@
   text-align: center;
 
   @media (vars.$tablet-width <= width < vars.$desktop-width) {
-    padding: 41px 39px 20px 37px;
+    padding: 41px 41px 0 37px;
+  }
+
+  @media (min-width: vars.$desktop-width) {
+    padding: 34px 40px 0 37px;
   }
 
 
@@ -30,7 +34,7 @@
 
   @media (min-width: vars.$tablet-width) {
     width: 640px;
-    height: 347px;
+    min-height: 347px;
 
     &::after {
       width: 640px;
@@ -58,6 +62,12 @@
 
 .modal-text-feedback {
   margin-bottom: 77px;
+
+  &--br {
+    br {
+      display: initial;
+    }
+  }
 
   @media (min-width: vars.$tablet-width) {
     margin-bottom: 100px;
