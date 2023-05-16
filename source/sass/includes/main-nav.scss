@@ -58,22 +58,6 @@
   }
 }
 
-.burger__toggle {
-  display: block;
-  width: 23px;
-  height: 22px;
-  background-image: url("../img/stack.svg#menu");
-  background-repeat: no-repeat;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
 .main-nav__toggle {
   position: absolute;
   border: none;

@@ -35,8 +35,8 @@
     "cache:clear": "gulp clearCache",
     "editorconfig": "editorconfig-cli",
     "fix:scss": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss --fix",
-    "lint": "gulp lint && npm run lint:scss && npm run editorconfig",
-    "lint:scss": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "lint": "gulp lint && npm run stylelint && npm run editorconfig",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
     "start": "gulp"
   },
   "browserslist": [
