@@ -199,24 +199,24 @@
         <h2 class="page__hidden">Социальные сети.</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk button" href="https://vk.com/htmlacademy">
-              <svg class="social__path" width="24" height="24">
+            <a class="social__link button" href="https://vk.com/htmlacademy">
+              <svg width="24" height="24" fill="currentColor">
                 <use href="img/stack.svg#vk"></use>
               </svg>
               <span class="page__hidden">ВКонтакте.</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
-              <svg class="social__path" width="22" height="18">
+            <a class="social__link button" href="https://t.me/htmlacademy">
+              <svg width="22" height="18" fill="currentColor">
                 <use href="img/stack.svg#telegram"></use>
               </svg>
               <span class="page__hidden">Телеграм.</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="social__path" width="20" height="14">
+            <a class="social__link button" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="20" height="14" fill="currentColor">
                 <use href="img/stack.svg#youtube"></use>
               </svg>
               <span class="page__hidden">Ютуб.</span>
@@ -225,31 +225,30 @@
         </ul>
       </div>
       <small class="page__footer-development development">
-        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано в HTML-академии.">
           <small class="development__text">Разработано</small>
-          <svg class="development-icon-path"  width="27" height="35">
+          <svg class="development-icon-path"  width="27" height="35" aria-hidden="true">
             <use href="img/stack.svg#academy"></use>
           </svg>
-          <span class="page__hidden">Разработано в HTML-академии.</span>
         </a>
       </small>
     </footer>
-  <div class="modal-container modal-container-close-error">
-    <div class="modal-error modal-search">
-      <section class="modal-content-close">
-        <h2 class="modal-title-error modal-title-error--br title">Что-то пошло <br> не так!</h2>
-        <p class="modal-text-error description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-button-error button" type="submit">ок</button>
+  <div class="modal-container" hidden>
+    <div class="modal-container__content modal-error">
+      <section class="modal-error__content">
+        <h2 class="modal-error__title modal-error__title--br title">Что-то пошло <br> не так!</h2>
+        <p class="modal-error__text description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-error__button button" type="submit">ок</button>
       </section>
     </div>
   </div>
-  <div class="modal-container modal-container-close-feedback">
-    <div class="modal-feedback modal-search">
-      <section class="modal-content-feedback">
-        <h2 class="modal-title-feedback title">Ваш отзыв отправлен!</h2>
-        <p class="modal-text-feedback modal-text-feedback--br description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
-        <div class="feedback-button">
-          <button class="modal-button-feedback button" type="submit">Закрыть окно</button>
+  <div class="modal-container" hidden>
+    <div class="modal-container__content modal-feedback">
+      <section class="modal-feedback__content">
+        <h2 class="modal-feedback__title title">Ваш отзыв отправлен!</h2>
+        <p class="modal-feedback__text modal-feedback__text--br description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal-feedback__wrapper">
+          <button class="modal-feedback__button button" type="submit">Закрыть окно</button>
         </div>
       </section>
     </div>

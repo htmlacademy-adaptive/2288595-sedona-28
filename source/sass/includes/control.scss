@@ -52,6 +52,7 @@
   background-color: #e5e5e5;
 }
 
+.control__input:focus + .control__mark,
 .control__input:focus-visible + .control__mark {
   outline: #275dc5 solid 2px;
 }

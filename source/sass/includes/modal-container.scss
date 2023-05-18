@@ -9,18 +9,13 @@
   left: 0;
   background-color: hsl(0deg 0% 0% / 30%);
   z-index: 12;
+
+  &[hidden] {
+    display: none;
+  }
 }
 
-.modal-title-error {
-  &--br {
-    br {
-      display: none;
-    }
-
-    @media (min-width: vars.$tablet-width) {
-      br {
-        display: initial;
-      }
-    }
-  }
+.modal-container__content {
+  max-height: 90vh;
+  overflow-y: auto;
 }
