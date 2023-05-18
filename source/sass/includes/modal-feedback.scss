@@ -5,64 +5,34 @@
   min-height: 323px;
   position: relative;
   margin: auto;
-  padding: 36px 39px 20px 37px;
+  padding: 0 39px;
   box-shadow: 0 25px 50px rgb(0 0 0 / 15%);
   background-color: #ffffff;
   z-index: 10;
   text-align: center;
 
-  @media (vars.$tablet-width <= width < vars.$desktop-width) {
-    padding: 41px 41px 0 37px;
-  }
-
-  @media (min-width: vars.$desktop-width) {
-    padding: 34px 40px 0 37px;
-  }
-
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    translate: -50% 0;
-    width: 320px;
-    height: 98px;
-    background-color: #f2f2f2;
-    z-index: -1;
-    bottom: 0;
-  }
-
   @media (min-width: vars.$tablet-width) {
+    padding: 0 40px 0 37px;
     width: 640px;
-    min-height: 347px;
+  }
 
     &::after {
-      width: 640px;
       height: 146px;
     }
   }
-}
 
-.modal-button-feedback {
-  padding: 16px 64px;
+.modal-feedback__button {
+  padding: 19px 64px;
   width: 280px;
   font-size: 18px;
 
   @media (min-width: vars.$tablet-width) {
     width: 458px;
     font-size: 21px;
-    margin-bottom: 46px;
-    margin-top: -8px;
   }
 }
 
-.modal-container-close-feedback {
-  display: none;
-}
-
-.modal-text-feedback {
-  margin-bottom: 77px;
-
+.modal-feedback__text {
   &--br {
     br {
       display: initial;
@@ -70,31 +40,43 @@
   }
 
   @media (min-width: vars.$tablet-width) {
-    margin-bottom: 100px;
-    margin-top: 18px;
-  }
-
-  @media (min-width: vars.$desktop-width) {
-    margin-bottom: 105px;
+    margin-top: 26px;
   }
 }
 
-.modal-title-feedback {
-  margin-bottom: 26px;
+.modal-feedback__title {
+  margin-bottom: 25px;
+  margin-top: 35px;
 
   @media (min-width: vars.$tablet-width) {
-    margin-bottom: 6px;
+    margin-bottom: 1px;
     font-size: 30px;
     line-height: 40px;
+    margin-top: 40px;
   }
 }
 
-.modal-content-feedback {
+.modal-feedback__content {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: vars.$tablet-width) {
     margin-top: 7px;
+  }
+}
+
+.modal-feedback__wrapper {
+  padding-top: 22px;
+  padding-bottom: 25px;
+  width: 320px;
+  background-color: #f2f2f2;
+  margin-top: 48px;
+
+  @media (min-width: vars.$tablet-width) {
+    width: 640px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    margin-top: 44px;
   }
 }
